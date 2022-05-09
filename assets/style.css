@@ -1,0 +1,287 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+/* ............................................ */
+
+
+/* ......................................Section Social.......................................... */
+.wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section-social{
+    width: 100%;
+    background-color: #F8EFEF;
+    padding: 20px;
+    margin: 0;
+}
+
+.social-info{
+    max-width: 470px;
+}
+
+.social-info__title{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    text-transform: capitalize;
+    max-width: 470px;
+}
+
+.social-info__text{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    margin-top: 18px;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons{
+    align-items: center;  
+    max-width: 700px;
+}
+
+.social-link{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-item{
+    max-width: 70px;
+    max-height: 70px;
+    margin-left: 30px;
+}
+
+/* ..........................................Section About Us............................ */
+.container-benefits{
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 50px 170px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.text-grey{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+.cards{
+    display: flex;
+}
+.icon{
+    max-width: 92px;
+    max-height: 92px;  
+    
+}
+.card-1, .card-2, .card-3{
+    display:block;
+}
+.subtitle{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    padding: 40px;
+}
+.text-card-1, .text-card-2, .text-card-3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding: 15px;
+    padding-bottom: 60px;
+}
+.benefits-separator{
+    border: 1px solid #EC7979;
+    background-color: #EC7979;
+    width: 170px;
+    margin-top: 52px;
+}
+
+/*................................................Banner...................................... */
+.section-banner{
+    background: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    color: white;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+.using{
+    color: white;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 90px;
+}
+.download{
+    max-width: 370px;
+    color: white;
+    background: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    border-color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 15px;
+    margin: 50px;
+    width: 370px;
+}
+.banner-separator{
+    border: 1px solid #FFFFFF;
+    background-color: #fff;
+    width: 170px;
+    margin-top: 52px;
+}
+
+/* ...............................................Footer...................................... */
+footer{
+    width: 100%;
+    background-color: #000000;
+}
+
+.social-link-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+.social-icons-footer{
+        max-width: 700px;
+        margin: 0 auto;
+}
+
+.footer-copyright{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.icon{
+    width: 53px;
+}
+/* ................................................. */
+
+@media screen and (max-width: 912px){
+    .container-benefits{
+        max-width: 942px;
+        padding: 50px 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container-benefits{
+        max-width: 798px;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-1, .card-2, .card-3{
+        width: calc(100% / 12 * 6 - 30px);
+    }
+}
+@media screen and (max-width: 576px){
+    .container-benefits{
+        max-width: 606px;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-1, .card-2, .card-3{
+        width: calc(100% / 12 * 12 - 30px);
+    }
+}
+
+
+
