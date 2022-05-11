@@ -168,7 +168,7 @@ img{vertical-align: top;}
 
 /*................................................Section Banner...................................... */
 .section-banner{
-    background: url(../images/background.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -215,6 +215,11 @@ img{vertical-align: top;}
     padding: 15px;
     margin: 50px auto;
     width: 370px;
+}
+.banner__button-download:hover{
+    background-color: rgb(251, 251, 250);
+    color: #000000;
+    transition: 0.3s;
 }
 .banner__separator{
     border: 1px solid #FFFFFF;
