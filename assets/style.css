@@ -55,7 +55,7 @@ img{vertical-align: top;}
 }
 
 .social-info{
-    max-width: 470px;
+    max-width: 400px;
 }
 
 .social-info__title{
@@ -80,7 +80,7 @@ img{vertical-align: top;}
 .social{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -95,9 +95,83 @@ img{vertical-align: top;}
 }
 
 .social-info__item{
-    max-width: 70px;
+    max-width: 40px;
     max-height: 70px;
     margin-left: 30px;
+}
+/* .........................................Section Tabs................................. */
+.tabs{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.nav-link{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #333333;
+}
+.nav-link:visited{
+    color:gray;
+
+}
+.card-body{
+    display: flex;
+    justify-content: space-between;
+}
+.card-body__text-card-body{
+    max-width: 570px;
+    text-align: justify;
+    padding: 15px;
+    margin-left: 75px;
+}
+.card-title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 60px;
+    margin-top: 45px;
+}
+.card-text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.btn-primary{
+    display: block;
+    width: 270px;
+    background: #EC7979;
+    color: white;
+    border: none;
+    margin-top: 27px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.btn-primary:hover{
+    background: #AB4949;
+}
+.btn-primary:focus{
+    background-color: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
+
+
+
+.tabs__img-1{
+    max-width: 470px;
+    max-height: 500px;
 }
 
 /* ..........................................Section Benefits............................ */
@@ -113,6 +187,7 @@ img{vertical-align: top;}
     font-size: 36px;
     line-height: 42px;
     color: #000000;
+    text-transform: uppercase;
 }
 
 .benefits__text-grey{
@@ -165,6 +240,88 @@ img{vertical-align: top;}
     max-width: 170px;
     margin-top: 52px;
     margin: 52px auto 0px auto;
+}
+
+/* ...............................................Section PRICE...................................... */
+.price{
+    padding: 50px 0;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+.price__cards{
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.price__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    width: calc(100% / 3 - 30px);
+}
+.price__card:hover{
+    transform: translate(0px, -30px);
+    transition: 0.5s linear;
+    box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
+}
+.price__card-header{
+    background-color: black;
+    padding: 32px auto;
+    width: 100%;
+}
+
+.price__name{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: white;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.price__value{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.price__free{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.price__card-body{
+    background-color: white;
+    width: 100%;
+}
+.price__item{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+
+color: #86878B;
+    border-bottom: 1px solid #F5F5F5;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 /*................................................Section Banner...................................... */
