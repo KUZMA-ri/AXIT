@@ -1,0 +1,510 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* ............................................ */
+
+:root {
+    --color-primary: white;
+    --color-hover: #AB4949;
+    --btn-color1: rgb(251, 251, 250);
+    --btn-color2: #EC7979;
+    --bg-color-dark: black;
+    --gutter: 15px;
+}
+
+
+/* ......................................Section Social.......................................... */
+.social {
+    width: 100%;
+    background-color: #F8EFEF;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.social__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.social__info {
+    align-items: center;
+    max-width: 400px;
+}
+
+.social__title {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2.0625em;
+    align-items: center;
+    text-transform: capitalize;
+    max-width: 470px;
+}
+
+.social__text {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3125em;
+    color: #86878B;
+    margin-top: 18px;
+}
+
+.social__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-list__item {
+    max-width: 40px;
+    max-height: 70px;
+    margin-left: 30px;
+}
+
+/* .........................................Section Tabs................................. */
+.tabs {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.nav-link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1875em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.nav-link:visited {
+    color: gray;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body__text-card-body {
+    max-width: 570px;
+    text-align: justify;
+    padding: 15px;
+    margin-left: 75px;
+}
+
+.card-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 2.5625em;
+    margin-bottom: 60px;
+    margin-top: 45px;
+}
+
+.card-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3125em;
+}
+
+.btn-primary {
+    display: block;
+    width: 270px;
+    background: var(--btn-color2);
+    color: var(--color-primary);
+    border: none;
+    margin-top: 27px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5625em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.btn-primary:hover {
+    background: var(--color-hover);
+}
+
+.btn-primary:focus {
+    background-color: var(--btn-color2);
+    box-shadow: inset 0px 0px 10px var(--color-hover);
+}
+
+.tabs__img-1 {
+    max-width: 470px;
+    max-height: 500px;
+}
+
+/* ..........................................Section Benefits............................ */
+.benefits {
+    padding: 50px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 912px) {
+    .benefits {
+        max-width: 942px;
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .benefits {
+        max-width: 798px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .benefits {
+        max-width: 606px;
+    }
+}
+
+.section-head__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 2.625em;
+    color: var(--bg-color-dark);
+    text-transform: uppercase;
+}
+
+.section-head__title:after {
+    content: "";
+    display: block;
+    border: 1px solid var(--btn-color2);
+    max-width: 170px;
+    margin-top: 52px;
+    margin: 52px auto 0px auto;
+}
+
+.section-head__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3125em;
+    color: #86878B;
+    margin-top: 100px;
+}
+
+.row {
+    display: flex;
+    margin: 0 calc(var(--gutter) * -1);
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.col {
+    margin-right: var(--gutter);
+    width: calc(100% / 3 - var(--gutter) * 2);
+}
+
+@media screen and (max-width: 768px) {
+    .col {
+        width: calc(100% / 12 * 6 - 30px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .col {
+        width: calc(100% / 12 * 12 - 30px);
+    }
+}
+
+.benefits__icon-card {
+    width: 150px;
+    height: 150px;
+
+}
+
+.benefits__subtitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2.0625em;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.benefits__text-card {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3125em;
+    color: var(--bg-color-dark);
+    padding: 15px;
+}
+
+/* ...............................................Section PRICE...................................... */
+.price {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.price__cards {
+    margin-top: 80px;
+}
+
+.price__card:hover {
+    transform: translate(0px, -30px);
+    transition: 0.3s linear;
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price__card-header {
+    background-color: var(--bg-color-dark);
+    padding: 32px auto;
+    width: 100%;
+}
+
+.price__name {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2.0625em;
+    text-transform: capitalize;
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.price__value {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 2.625em;
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.price__free {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3125em;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.price__card-body {
+    background-color: var(--color-primary);
+    width: 100%;
+}
+
+.price__item {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3125em;
+    text-transform: capitalize;
+    color: #86878B;
+    border-bottom: 1px solid #F5F5F5;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+/*................................................Section Banner...................................... */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 100px 0 100px 0;
+    display: flex;
+    text-align: center;
+}
+
+.section-head__title_light {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 2.625em;
+    color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.section-head__text_light {
+    color: var(--color-primary);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3125em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 73px;
+}
+
+.section-head__title_light:after {
+    content: "";
+    display: block;
+    border: 1px solid var(--color-primary);
+    max-width: 170px;
+    margin-top: 52px;
+    margin: 52px auto 0px auto;
+}
+
+.btn__button-download {
+    color: var(--color-primary);
+    background: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5625em;
+    text-transform: capitalize;
+    border-color: var(--color-primary);
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    padding: 15px;
+    width: 370px;
+}
+
+.btn__button-download:hover {
+    background-color: var(--btn-color1);
+    color: var(--bg-color-dark);
+    transition: 0.3s;
+}
+
+/* ...............................................Footer...................................... */
+footer {
+    width: 100%;
+    background-color: var(--bg-color-dark);
+}
+
+.footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.footer__copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3125em;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.footer__icon {
+    width: 53px;
+    margin-right: 40px;
+}

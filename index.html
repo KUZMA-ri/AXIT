@@ -8,28 +8,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
     <title>Document</title>
 </head>
 <body>
     <!-- Social -->
-    <section class="section-social">
+    <section class="social">
         <div class="wrapper">
-            <div class="social">
-                <div class="social-info">
-                    <h2 class="social-info__title">Social Media</h2>
-                    <p class="social-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <div class="social__inner">
+                <div class="social__info">
+                    <h2 class="social__title">Social Media</h2>
+                    <p class="social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Aenean euismod bibendum laoreet.</p>
                 </div>
-                <div class="social-info__icons">
-                    <ul class="social-info__link">
-                            <li><a class="social-info__item" href="http://www.facebook.com"><img src='./images/facebook_icon.png'/></a></li>
-                            <li><a class="social-info__item" href="http://www.twitter.com"><img src='./images/twitter_icon.png' /></a></li>
-                            <li><a class="social-info__item" href="https://ru.linkedin.com"><img src='./images/linkedin_icon.png' /></a></li>
-                            <li><a class="social-info__item" href="https://www.pinterest.com"><img src='./images/pinterest_icon.png' /></a></li>
-                            <li><a class="social-info__item" href="https://www.instagram.com"><img src='./images/instagram_icon.png' /></a></li>
-                            <li><a class="social-info__item" href="https://github.com"><img src='./images/github_icon.png' /></a></li>
-                            <li><a class="social-info__item" href="#"><img src='./images/rss_icon.png' /></a></li>
+                <div class="social__icons">
+                    <ul class="social__list">
+                            <li><a class="social-list__item" href="http://www.facebook.com"><img src='assets/images/social-icons/facebook_icon.png'/></a></li>
+                            <li><a class="social-list__item" href="http://www.twitter.com"><img src='assets/images/social-icons/twitter_icon.png' /></a></li>
+                            <li><a class="social-list__item" href="https://ru.linkedin.com"><img src='assets/images/social-icons/linkedin_icon.png' /></a></li>
+                            <li><a class="social-list__item" href="https://www.pinterest.com"><img src='assets/images/social-icons/pinterest_icon.png' /></a></li>
+                            <li><a class="social-list__item" href="https://www.instagram.com"><img src='assets/images/social-icons/instagram_icon.png' /></a></li>
+                            <li><a class="social-list__item" href="https://github.com"><img src='assets/images/social-icons/github_icon.png' /></a></li>
+                            <li><a class="social-list__item" href="#"><img src='assets/images/social-icons/rss_icon.png' /></a></li>
                     </ul>
                 </div>
             </div>
@@ -39,7 +39,7 @@
     <!-- Made with Boootstrap -->
     <section class="tabs">
         <div class="wrapper">
-            <div class="card text-center">
+            <div class="card text">
                 <div class="card__content">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
@@ -54,7 +54,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body"> 
                         <div class="card-body__text-card-body">
                             <h5 class="card-title">Tabs with soft transitioning effect.</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
@@ -65,36 +65,35 @@
                                 bibendum laoreet.</p>
                             <a href="#" class="btn btn-primary">Download</a>
                         </div>
-                            
                         <div class="tabs__img">
-                                <img class="tabs__img-1" src="./images/tabs/tabs-image.png" alt="">
+                                <img class="tabs__img-1" src="assets/images/tabs/tabs-image.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-        
     <!-- Benefits -->
-    <section class="container-benefits">
+    <section class="benefits">
         <div class="wrapper">
-            <h2 class="benefits__title">WHY THIS IS AWESOME</h2>
-            <hr class="benefits__separator">
-            <p class="benefits__text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="benefits__cards">
-                <div class="benefits__card">
-                    <img src="images\icons\about_icon_1.png" alt="" class="benefits__icon-card">
+            <div class="section-head">
+                <h2 class="section-head__title">WHY THIS IS AWESOME</h2>
+                <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="benefits row">
+                <div class="benefits col">
+                    <img src="assets/images/icons/about_icon_1.png" alt="" class="benefits__icon-card">
                     <h2 class="benefits__subtitle">Thoughtful Design</h2>
                     <p class="benefits__text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                 </div>
-                <div class="benefits__card">
-                    <img src="images\icons\about_icon_2.png" alt="" class="benefits__icon-card">
+                <div class="benefits col">
+                    <img src="assets/images/icons/about_icon_2.png" alt="" class="benefits__icon-card">
                     <h2 class="benefits__subtitle">Thoughtful Design</h2>
                     <p class="benefits__text-card">Lorem ipsum dolor sit amet, consectetur adipiscing 
                         elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                 </div>
-                <div class="benefits__card">
-                    <img src="images\icons\about_icon_3.png" alt="" class="benefits__icon-card">
+                <div class="benefits col">
+                    <img src="assets/images/icons/about_icon_3.png" alt="" class="benefits__icon-card">
                     <h2 class="benefits__subtitle">Thoughtful Design</h2>
                     <p class="benefits__text-card">Lorem ipsum dolor sit amet, consectetur adipiscing 
                         elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
@@ -106,12 +105,13 @@
     <section class="price">
         <div class="wrapper">
             <!-- Повторяющийся блок -->
-            <h2 class="benefits__title">pricing options</h2>
-            <hr class="benefits__separator">
-            <p class="benefits__text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="section-head">
+                <h2 class="section-head__title">Pricing options</h2>
+                <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
             <!--  -->
-            <div class="price__cards">
-                <div class="price__card">
+            <div class="price__cards row">
+                <div class="price__card col">
                     <div class="price__card-header">
                         <h4 class="price__name">Basic</h4>
                         <h3 class="price__value">$10</h3>
@@ -128,7 +128,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="price__card">
+                <div class="price__card col">
                     <div class="price__card-header">
                         <h4 class="price__name">Optima</h4>
                         <h3 class="price__value">$20</h3>
@@ -145,7 +145,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="price__card">
+                <div class="price__card col">
                     <div class="price__card-header">
                         <h4 class="price__name">Pro</h4>
                         <h3 class="price__value">$30</h3>
@@ -166,32 +166,35 @@
         </div>
     </section>
     <!-- Banner -->
-    <section class="section-banner">
+    <section class="banner">
         <div class="wrapper">
-            <div class="banner__download">
-                <h2 class="banner__text">STYLISH AXURE DESIGN</h2>
-                <hr class="banner__separator">
-                <p class="banner__using">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
-                <input type="button" value="download" class="banner__button-download">
+            <div class="section-head">
+                <h2 class="section-head__title_light">STYLISH AXURE DESIGN</h2>
+                <p class="section-head__text_light">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+            </div>
+            <div class="btn__download">
+                <input type="button" value="download" class="btn__button-download">
             </div>
         </div>           
     </section>
     <!-- Footer -->
-    <footer>
-        <div class="footer__social-icons">
+    <footer class="footer">
             <div class="wrapper">
-                <ul class="footer__social-link">
-                    <li><a class="footer__social-item" href="http://www.facebook.com"><img class="footer__icon" src='./images/facebook_icon.png'/></a></li>
-                    <li><a class="footer__social-item" href="http://www.twitter.com"><img class="footer__icon" src='./images/twitter_icon.png' /></a></li>
-                    <li><a class="footer__social-item" href="https://ru.linkedin.com"><img class="footer__icon" src='./images/linkedin_icon.png' /></a></li>
-                    <li><a class="footer__social-item" href="https://www.pinterest.com"><img class="footer__icon" src='./images/pinterest_icon.png' /></a></li>
-                    <li><a class="footer__social-item" href="https://www.instagram.com"><img class="footer__icon" src='./images/instagram_icon.png' /></a></li>
-                    <li><a class="footer__social-item" href="https://github.com"><img class="icon" src='./images/github_icon.png' /></a></li>
-                    <li><a class="footer__social-item" href="#"><img class="icon" src='./images/rss_icon.png' /></a></li>
-                </ul>
-                <h5 class="footer__copyright">© 2015 Axure Themes</h5>
+                <div class="footer__icons">
+                    <ul class="footer__list">
+                        <li><a class="footer__item" href="http://www.facebook.com"><img class="footer__icon" src='assets/images/social-icons/facebook_icon.png'/></a></li>
+                        <li><a class="footer__item" href="http://www.twitter.com"><img class="footer__icon" src='assets/images/social-icons/twitter_icon.png' /></a></li>
+                        <li><a class="footer__item" href="https://ru.linkedin.com"><img class="footer__icon" src='assets/images/social-icons/linkedin_icon.png' /></a></li>
+                        <li><a class="footer__item" href="https://www.pinterest.com"><img class="footer__icon" src='assets/images/social-icons/pinterest_icon.png' /></a></li>
+                        <li><a class="footer__item" href="https://www.instagram.com"><img class="footer__icon" src='assets/images/social-icons/instagram_icon.png' /></a></li>
+                        <li><a class="footer__item" href="https://github.com"><img class="footer__icon" src='assets/images/social-icons/github_icon.png' /></a></li>
+                        <li><a class="footer__item" href="#"><img class="footer__icon" src='assets/images/social-icons/rss_icon.png' /></ф></li>
+                    </ul>
+                    <h5 class="footer__copyright">© 2015 Axure Themes</h5>
+                </div>
+                
+                
             </div>
-        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
