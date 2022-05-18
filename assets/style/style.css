@@ -79,7 +79,154 @@ img {
     --gutter: 15px;
 }
 
-
+/* Section HEADER */
+.header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: var(--bg-color-dark);
+}
+.header__nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__list{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.header__item{
+    margin-top: 18px;
+}
+.header__link{
+    color: var(--color-primary);
+    margin-left: 50px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size:14px;
+    line-height: 1.1875em;
+    text-transform: capitalize;
+}
+.header__link:hover{
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-hover);
+}
+.promo{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/promo/bg.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.promo__container{
+    display: flex;
+    padding-top: 100px;
+}
+.promo__content{
+    padding-top: 100px;
+    max-width: 670px;
+}
+.promo__logo-img{
+    width: 270px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+.promo__title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+.promo__title:after{
+    content: "";
+    display: block;
+    border: 1px solid var(--color-primary);
+    max-width: 170px;
+    margin-top:55px;
+}
+.promo__text{
+    color: var(--color-primary);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 42px 0;
+}
+.promo__form{
+    display: block;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+.promo__form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 30px;
+    padding: 25px;
+}
+.promo__form-title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    margin: 50px;
+}
+.promo__form-input{
+    padding: 0 50px;
+}
+.promo__form-title_color{
+    color: var(--btn-color2);
+}
+.promo__form-item{
+    border-bottom: 1px solid #BDBDBD;
+    padding: 35px 15px 5px 15px;
+}
+.promo-input{
+    color: #BDBDBD;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+.promo-input:focus{
+    border: 1px solid var(--btn-color2);
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 5px;
+}
+.promo__form-item_hidden{
+    border:none;
+    padding: 25px;
+}
+.promo__form-btn{
+    display: block;
+    background-color: var(--btn-color2);
+    width: 100%;
+    height: 60px;
+    padding: 15px auto;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-primary);
+    border-radius: 0 0 10px 10px;
+}
+.promo__form-btn:hover{
+    background-color: var(--color-hover);
+}
 /* ......................................Section Social.......................................... */
 .social {
     width: 100%;
@@ -255,8 +402,7 @@ img {
     display: block;
     border: 1px solid var(--btn-color2);
     max-width: 170px;
-    margin-top: 52px;
-    margin: 52px auto 0px auto;
+    margin: 42px auto 0px auto;
 }
 
 .section-head__text {
@@ -266,7 +412,7 @@ img {
     font-size: 18px;
     line-height: 1.3125em;
     color: #86878B;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .row {
@@ -345,7 +491,7 @@ img {
 
 .price__card:hover {
     transform: translate(0px, -30px);
-    transition: 0.3s linear;
+    transition: 0.2s linear;
     box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -438,17 +584,16 @@ img {
     font-size: 18px;
     line-height: 1.3125em;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 52px;
     margin-bottom: 73px;
 }
 
 .section-head__title_light:after {
     content: "";
     display: block;
-    border: 1px solid var(--color-primary);
     max-width: 170px;
-    margin-top: 52px;
-    margin: 52px auto 0px auto;
+    border: 1px solid var(--color-primary);
+    margin: 57px auto 0 auto;
 }
 
 .btn__button-download {
