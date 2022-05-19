@@ -78,8 +78,7 @@ img {
     --bg-color-dark: black;
     --gutter: 15px;
 }
-
-/* Section HEADER */
+/* ......................................HEADER................................ */
 .header{
     position: fixed;
     right: 0;
@@ -114,6 +113,7 @@ img {
     color: var(--color-primary);
     border-bottom: 2px solid var(--color-hover);
 }
+/* .......................................PROMO................................ */
 .promo{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/promo/bg.png);
     width: 100%;
@@ -188,12 +188,11 @@ img {
 .promo__form-title_color{
     color: var(--btn-color2);
 }
-.promo__form-item{
+.promo-input{
+    width: 100%;
     border-bottom: 1px solid #BDBDBD;
     padding: 35px 15px 5px 15px;
-}
-.promo-input{
-    color: #BDBDBD;
+    color: var(--bg-color-dark);
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -201,14 +200,11 @@ img {
     line-height: 19px;
 }
 .promo-input:focus{
-    border: 1px solid var(--btn-color2);
+    border-bottom: 1px solid var(--btn-color2);
     width: 100%;
-    border-radius: 5px;
-    padding: 15px 5px;
 }
-.promo__form-item_hidden{
-    border:none;
-    padding: 25px;
+.promo__button{
+    margin-top: 75px;
 }
 .promo__form-btn{
     display: block;
