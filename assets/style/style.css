@@ -78,19 +78,22 @@ img {
     --bg-color-dark: black;
     --gutter: 15px;
 }
+/* *{ border:1px solid red; box-sizing:border-box; } */
 /* ......................................HEADER................................ */
 .header{
+    width: 100%;
     position: fixed;
     z-index: 10;
-    right: 0;
     left: 0;
     top: 0;
     background-color: var(--bg-color-dark);
 }
 .header__nav-header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
 }
 .header__list{
     position: relative;
@@ -116,18 +119,20 @@ img {
 }
 /* .......................................PROMO................................ */
 .promo{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/promo/bg.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/promo/bg.png) no-repeat center;
     width: 100%;
     height: 100vh;
-    background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 50px;
 }
 .promo__container{
     display: flex;
+    width: 100%;
+    height: 100vh;
     padding-top: 100px;
 }
+
 .promo__content{
-    padding-top: 100px;
     width: calc(100% / 12 * 7);
 }
 .promo__logo-img{
@@ -195,7 +200,6 @@ img {
     width: calc(100% / 12 * 5);
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     margin-left: 30px;
     padding: 25px;
 }
@@ -243,7 +247,7 @@ img {
     display: block;
     background-color: var(--btn-color2);
     width: 100%;
-    padding: 15px auto;
+    padding: 15px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -259,6 +263,41 @@ img {
     box-shadow: inset 0px 0px 10px var(--color-hover);
 }
 /* component BTN color Pink end */
+
+@media screen and (max-width: 1024px) {
+    .promo__container{
+        padding: 100px 15px;
+    }
+    .promo__title{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .promo__content{
+        width: calc(100% / 12 * 6);
+    }
+    .promo__form-container{
+        width: calc(100% / 12 * 6);
+    }
+    .promo__form-title{
+        font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    }
+    .promo__text{
+        font-size: 14px;
+        line-height: 16px;
+        width: 183px;
+    }
+    .promo__btn{
+        width: 183px;
+    }
+    .promo__title:after{
+        content: "";
+        max-width: 115px;
+        margin-top:41px;
+    }
+}
 /* ......................................Section Social.......................................... */
 .social {
     width: 100%;
@@ -277,11 +316,12 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding: 0 15px;
 }
 
 .social__info {
     align-items: center;
-    max-width: 400px;
+    width: calc(100% / 12 * 5);
 }
 
 .social__title {
@@ -303,17 +343,35 @@ img {
     margin-top: 18px;
 }
 
+.social__icons{
+    width: calc(100% / 12 * 7);
+}
 .social__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .social-list__item {
     max-width: 40px;
     max-height: 70px;
-    margin-left: 30px;
 }
-
+@media screen and (max-width: 1024px){
+    .social__title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .social__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .social-list__item{
+        max-width: 53px;
+        max-height: 53px;
+    }
+}
 /* .........................................Section Tabs................................. */
 /* .tabs {
     padding-top: 100px;
@@ -396,28 +454,9 @@ img {
 
 /* ..........................................Section Benefits............................ */
 .benefits {
-    padding: 50px 0;
+    padding: 50px 15px;
     text-align: center;
 }
-
-/* @media screen and (max-width: 912px) {
-    .benefits {
-        max-width: 942px;
-        padding: 50px 20px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .benefits {
-        max-width: 798px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .benefits {
-        max-width: 606px;
-    }
-} */
 
 .section-head__title {
     font-family: 'Raleway';
@@ -453,42 +492,15 @@ img {
     flex-wrap: wrap;
 }
 
-/* @media screen and (max-width: 768px) {
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-} */
-
 .col-4 {
     margin-right: var(--gutter);
     margin-left: var(--gutter);
     width: calc(100% / 3 - var(--gutter) * 2);
 }
 
-/* @media screen and (max-width: 768px) {
-    .col-4 {
-        width: calc(100% / 12 * 6 - 30px);
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .col-4 {
-        width: calc(100% / 12 * 12 - 30px);
-    }
-} */
-
 .benefits__icon-card {
     width: 150px;
     height: 150px;
-
 }
 
 .benefits__subtitle {
@@ -510,6 +522,43 @@ img {
     color: var(--bg-color-dark);
     padding: 15px;
 }
+@media screen and (max-width: 1024px){
+    .benefits {
+        padding: 15px 15px;
+    }
+    .section-head__title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section-head__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .benefits__icon-card{
+        width: 120px;
+        height: 120px;
+    }
+    .benefits__subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .benefits__text-card{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .section-head__title:after {
+        content: "";
+        display: block;
+        border: 1px solid var(--btn-color2);
+        background-color: var(--btn-color2);
+        max-width: 170px;
+        margin: 42px auto 0px auto;
+    }
+}
 
 /* ...............................................Section PRICE...................................... */
 .price {
@@ -530,7 +579,7 @@ img {
 
 .price__card-header {
     background-color: var(--bg-color-dark);
-    padding: 32px auto;
+    padding: 0 32px;
     width: 100%;
 }
 
@@ -587,9 +636,45 @@ img {
     padding-top: 18px;
     padding-bottom: 18px;
 }
+@media screen and (max-width: 1024px){
+    .price__cards{
+        padding: 0 15px;
+    }
+    .price__card-header{
+        padding: 0 16px;
+    }
+    .price__name {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .price__value{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    
+    .price__free{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .price__item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+}
 /* ...............................................Section REVIEWS..................................... */
 .reviews{
-    padding: 70px 0;
+    padding: 70px 15px;
     text-align: center;
 }
 .reviews__text{
@@ -643,6 +728,27 @@ img {
     color: var(--bg-color-dark);
     margin-top: 15px;
 }
+@media screen and (max-width: 1024px){
+    .reviews__photo{
+        width: 63px;
+        height: 63px;
+    }
+    .reviews__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .reviews__name{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .reviews__position{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
 /*................................................Section Banner...................................... */
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background.png);
@@ -686,7 +792,11 @@ img {
 .banner__btn{
     width: 370px; 
 }
-
+@media screen and (max-width: 1024px){
+    .banner__btn{
+        width: 318px;
+    }
+}
 
 /* ...............................................Contacts................................... */
 .contacts{
@@ -716,12 +826,13 @@ img {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    border-bottom: 1px solid #BDBDBD;;
-    padding-top: 50px;
+    border-bottom: 1px solid #BDBDBD;
     color: #BDBDBD;
 }
 textarea{
     resize: none;
+    width: 100%;
+    height: 100%;
 }
 .contacts__button{
     display: block;
@@ -733,6 +844,14 @@ textarea{
     line-height: 25px;
     text-transform: capitalize;
     padding: 15px;  
+}
+@media screen and (max-width: 1024px){
+    .contacts__form{
+        padding: 0 15px;
+    }
+    .contacts__btn{
+        width: 318px;
+    }
 }
 /* ...............................................Footer...................................... */
 footer {
