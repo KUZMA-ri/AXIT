@@ -128,7 +128,7 @@ img {
 }
 .promo__content{
     padding-top: 100px;
-    max-width: 670px;
+    width: calc(100% / 12 * 7);
 }
 .promo__logo-img{
     width: 270px;
@@ -160,14 +160,39 @@ img {
     line-height: 21px;
     margin: 42px 0;
 }
+/* component BTN start */
+.btn__button-download {
+    color: var(--color-primary);
+    background: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5625em;
+    text-transform: capitalize;
+    border-color: var(--color-primary);
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    padding: 15px;
+}
+.btn__button-download:hover {
+    background-color: var(--btn-color1);
+    color: var(--bg-color-dark);
+    transition: 0.3s;
+}
+/* component BTN end */
+.promo__btn{
+    width: 270px;
+}
 .promo__form{
+    border-radius: 10px;
     display: block;
     background-color: var(--color-primary);
-    border-radius: 10px;
 }
 .promo__form-container{
     display: flex;
     flex-direction: column;
+    width: calc(100% / 12 * 5);
     justify-content: center;
     align-items: center;
     margin-top: 100px;
@@ -190,28 +215,34 @@ img {
     color: var(--btn-color2);
 }
 .promo-input{
+    padding: 35px 15px 5px 15px;
+}
+/* component input-form start */
+.input{
     width: 100%;
     border-bottom: 1px solid #BDBDBD;
-    padding: 35px 15px 5px 15px;
-    color: var(--bg-color-dark);
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
 }
-.promo-input:focus{
+.input:focus{
     border-bottom: 1px solid var(--btn-color2);
-    width: 100%;
 }
+/* component input form end */
 .promo__button{
     margin-top: 75px;
 }
 .promo__form-btn{
+    height: 60px;
+    border-radius: 0 0 10px 10px;
+}
+/* component BTN color Pink start */
+.form__btn_pink{
     display: block;
     background-color: var(--btn-color2);
     width: 100%;
-    height: 60px;
     padding: 15px auto;
     font-family: 'Open Sans';
     font-style: normal;
@@ -219,11 +250,15 @@ img {
     font-size: 15px;
     line-height: 20px;
     color: var(--color-primary);
-    border-radius: 0 0 10px 10px;
 }
-.promo__form-btn:hover{
+.form__btn_pink:hover{
     background-color: var(--color-hover);
 }
+.form__btn_pink:focus{
+    background-color: var(--btn-color2);
+    box-shadow: inset 0px 0px 10px var(--color-hover);
+}
+/* component BTN color Pink end */
 /* ......................................Section Social.......................................... */
 .social {
     width: 100%;
@@ -280,7 +315,7 @@ img {
 }
 
 /* .........................................Section Tabs................................. */
-.tabs {
+/* .tabs {
     padding-top: 100px;
     padding-bottom: 80px;
 }
@@ -357,7 +392,7 @@ img {
 .tabs__img-1 {
     max-width: 470px;
     max-height: 500px;
-}
+} */
 
 /* ..........................................Section Benefits............................ */
 .benefits {
@@ -365,7 +400,7 @@ img {
     text-align: center;
 }
 
-@media screen and (max-width: 912px) {
+/* @media screen and (max-width: 912px) {
     .benefits {
         max-width: 942px;
         padding: 50px 20px;
@@ -382,7 +417,7 @@ img {
     .benefits {
         max-width: 606px;
     }
-}
+} */
 
 .section-head__title {
     font-family: 'Raleway';
@@ -418,7 +453,7 @@ img {
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -430,24 +465,25 @@ img {
         display: flex;
         flex-wrap: wrap;
     }
-}
+} */
 
-.col {
+.col-4 {
     margin-right: var(--gutter);
+    margin-left: var(--gutter);
     width: calc(100% / 3 - var(--gutter) * 2);
 }
 
-@media screen and (max-width: 768px) {
-    .col {
+/* @media screen and (max-width: 768px) {
+    .col-4 {
         width: calc(100% / 12 * 6 - 30px);
     }
 }
 
 @media screen and (max-width: 576px) {
-    .col {
+    .col-4 {
         width: calc(100% / 12 * 12 - 30px);
     }
-}
+} */
 
 .benefits__icon-card {
     width: 150px;
@@ -647,28 +683,11 @@ img {
     border: 1px solid var(--color-primary);
     margin: 57px auto 0 auto;
 }
-
-.btn__button-download {
-    color: var(--color-primary);
-    background: none;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.5625em;
-    text-transform: capitalize;
-    border-color: var(--color-primary);
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    padding: 15px;
-    width: 370px;
+.banner__btn{
+    width: 370px; 
 }
 
-.btn__button-download:hover {
-    background-color: var(--btn-color1);
-    color: var(--bg-color-dark);
-    transition: 0.3s;
-}
+
 /* ...............................................Contacts................................... */
 .contacts{
     padding: 70px 0;
@@ -687,20 +706,9 @@ img {
     width: calc(100% / 2);
 }
 .contacts-input{
-    width: 100%;
-    border-bottom: 1px solid #BDBDBD;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
     padding-top: 50px;
     padding-bottom: 16px;
 }
-.contacts-input:focus{
-    border-bottom: 1px solid var(--btn-color2);
-}
-
 .contacts__form-message{
     width: calc(100% / 2 - 30px);
     font-family: 'Open Sans';
@@ -721,25 +729,11 @@ textarea{
 }
 .contacts__btn{
     width: 370px;
-    background-color: var(--btn-color2);
-    text-align: center;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
-    padding: 15px;
-    color: var(--color-primary);    
+    padding: 15px;  
 }
-.contacts__btn:hover{
-    background-color: var(--color-hover);
-}
-.contacts__btn:focus {
-    background-color: var(--btn-color2);
-    box-shadow: inset 0px 0px 10px var(--color-hover);
-}
-
 /* ...............................................Footer...................................... */
 footer {
     width: 100%;

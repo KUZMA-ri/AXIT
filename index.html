@@ -39,26 +39,28 @@
                     <div class="promo__logo"><img class="promo__logo-img" src="./assets/images/header/logo.png" alt="logo"></div>
                     <h1 class="promo__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                     <p class="promo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <div class="btn__download">
-                        <input type="button" value="download" class="btn__button-download">
+                    <!-- component BTN start -->
+                    <div class="btn-download ">
+                        <input type="button" value="download" class="promo__btn btn__button-download">
                     </div>
+                    <!-- component BTN end -->
                 </div>
                 <div class="promo__form-container">
                     <form class="promo__form">
                         <h2 class="promo__form-title">Try Your <span class="promo__form-title_color">FREE</span> Trial Today</h2>
                         <div class="promo__form-input">
                             <div class="promo__form-item">
-                                <input class="promo-input" type="text" required placeholder="Name" onfocus="this.value=''" value="">
+                                <input class="promo-input input" type="text" required placeholder="Name" onfocus="this.value=''" value="">
                             </div>
                             <div class="promo__form-item">
-                                <input class="promo-input"type="email" required placeholder="Email" onfocus="this.value=''" value="">
+                                <input class="promo-input input"type="email" required placeholder="Email" onfocus="this.value=''" value="">
                             </div>
                             <div class="promo__form-item">
-                                <input class="promo-input"type="password" required placeholder="Password" onfocus="this.value=''" value="">
+                                <input class="promo-input input"type="password" required placeholder="Password" onfocus="this.value=''" value="">
                             </div>  
                         </div>
-                        <div class="promo__button">
-                            <button class="promo__form-btn">Get Started</button>
+                        <div class="promo__button ">
+                            <button class="promo__form-btn form__btn_pink">Get Started</button>
                         </div>    
                     </form>
                 </div>
@@ -90,7 +92,7 @@
     </section>
     <!-- Tabs -->
     <!-- Made with Boootstrap -->
-    <section class="tabs">
+    <!-- <section class="tabs">
         <div class="wrapper">
             <div class="card text">
                 <div class="card__content">
@@ -125,7 +127,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Benefits -->
     <section class="benefits">
         <div class="wrapper">
@@ -164,7 +166,7 @@
             </div>
             <!--  -->
             <div class="price__cards row">
-                <div class="price__card col">
+                <div class="price__card col-4">
                     <div class="price__card-header">
                         <h4 class="price__name">Basic</h4>
                         <h3 class="price__value">$10</h3>
@@ -181,7 +183,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="price__card col">
+                <div class="price__card col-4">
                     <div class="price__card-header">
                         <h4 class="price__name">Optima</h4>
                         <h3 class="price__value">$20</h3>
@@ -198,7 +200,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="price__card col">
+                <div class="price__card col-4">
                     <div class="price__card-header">
                         <h4 class="price__name">Pro</h4>
                         <h3 class="price__value">$30</h3>
@@ -226,7 +228,7 @@
                     <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="reviews row">
-                    <div class="reviews__card col">
+                    <div class="reviews__card col-4">
                         <div class="reviews__text">
                             <p class="text">Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit. Doloribus 
@@ -243,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="reviews__card col">
+                    <div class="reviews__card col-4">
                         <div class="reviews__text">
                             <p class="text">Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit. Doloribus 
@@ -260,7 +262,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="reviews__card col">
+                    <div class="reviews__card col-4">
                         <div class="reviews__text">
                             <p class="text">Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit. Doloribus 
@@ -287,9 +289,11 @@
                 <h2 class="section-head__title_light">STYLISH AXURE DESIGN</h2>
                 <p class="section-head__text_light">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
             </div>
-            <div class="btn__download">
-                <input type="button" value="download" class="btn__button-download">
+            <!-- component BTN start -->
+            <div class="btn-download">
+                <input type="button" value="download" class="banner__btn btn__button-download">
             </div>
+            <!-- component BTN end -->
         </div>           
     </section>
     <!-- Contacts -->
@@ -302,20 +306,20 @@
             <form class="contacts__form">
                 <div class="contacts__form-info">
                     <div class="contacts__form-item">
-                        <input class="contacts-input" type="text" required placeholder="Name" onfocus="this.value=''" value="">
+                        <input class="contacts-input input" type="text" required placeholder="Name" onfocus="this.value=''" value="">
                     </div>
                     <div class="contacts__form-item">
-                        <input class="contacts-input"type="email" required placeholder="Email" onfocus="this.value=''" value="">
+                        <input class="contacts-input input"type="email" required placeholder="Email" onfocus="this.value=''" value="">
                     </div>
                     <div class="contacts__form-item">
-                        <input class="contacts-input"type="password" required placeholder="Password" onfocus="this.value=''" value="">
+                        <input class="contacts-input input"type="password" required placeholder="Password" onfocus="this.value=''" value="">
                     </div>  
                 </div>
                 <div class="contacts__form-message">
                     <textarea  name="" id="" cols="70" rows="10" placeholder="Message"></textarea>
                 </div>
                 <div class="contacts__button">
-                    <button class="contacts__btn">Send Message</button>
+                    <button class="contacts__btn form__btn_pink">Send Message</button>
                 </div>
                 
                 
