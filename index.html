@@ -16,12 +16,7 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__nav-header">
-                <div class="burger">
-                    <span class="burger__line burger__line_first"></span>
-                    <span class="burger__line burger__line_second"></span>
-                    <span class="burger__line burger__line_third"></span>
-                    <span class="burger__line burger__line_fourth"></span>
-                </div>
+                
                 <div class="header__logo">
                     <a href=""><img class="header__logo-img" src="./assets/images/header/logo.png" alt=""></a>
                 </div>
@@ -34,6 +29,12 @@
                         <li class="header__item"><a class="header__link" href="#">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="burger">
+                    <span class="burger__line burger__line_first"></span>
+                    <span class="burger__line burger__line_second"></span>
+                    <span class="burger__line burger__line_third"></span>
+                    <span class="burger__line burger__line_fourth"></span>
+                </div>
             </div>
         </div>
     </header>
@@ -97,44 +98,70 @@
         </div>
     </section>
     <!-- Tabs -->
-    <!-- Made with Boootstrap -->
-    <!-- <section class="tabs">
+    <div class="tab">
         <div class="wrapper">
-            <div class="card text">
-                <div class="card__content">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                            <a class="nav-link active" href="#">Tab 1</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Tab 2</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Tab 3</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-body"> 
-                        <div class="card-body__text-card-body">
-                            <h5 class="card-title">Tabs with soft transitioning effect.</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+            <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                <label for="tab-btn-1">Tab 1</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label for="tab-btn-2">Tab 2</label>
+                <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                <label for="tab-btn-3">Tab 3</label>
+                <div id="content-1">
+                    <div class="tabs__body"> 
+                        <div class="tabs__body-content">
+                            <h5 class="tabs__body-title">Tabs with soft transitioning effect.</h5>
+                            <p class="tabs__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
                                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
                                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
                                 penatibus et magnis dis parturient montes.<br>                                
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
                                 bibendum laoreet.</p>
-                            <a href="#" class="btn btn-primary">Download</a>
+                            <a href="#" class="tabs__body-btn btn-primary">Download</a>
                         </div>
                         <div class="tabs__img">
                                 <img class="tabs__img-1" src="assets/images/tabs/tabs-image.png" alt="">
                         </div>
                     </div>
                 </div>
+                <div id="content-2">
+                    <div class="tabs__body"> 
+                        <div class="tabs__body-content">
+                            <h5 class="tabs__body-title">Tabs with soft transitioning effect.</h5>
+                            <p class="tabs__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                penatibus et magnis dis parturient montes.<br>                                
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet.</p>
+                            <a href="#" class="tabs__body-btn btn-primary">Download</a>
+                        </div>
+                        <div class="tabs__img">
+                                <img class="tabs__img-2" src="https://2.bp.blogspot.com/-T9_EGQB-UBU/V7sQr6Wil7I/AAAAAAAACTU/i6y5RlpQCEA9P52QcmMItHJjhWR3PTQ2gCLcB/s1600/USA_10654_Bryce_Canyon_Luca_Galuzzi_2007%2Bv3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="content-3">
+                    <div class="tabs__body"> 
+                        <div class="tabs__body-content">
+                            <h5 class="tabs__body-title">Tabs with soft transitioning effect.</h5>
+                            <p class="tabs__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                penatibus et magnis dis parturient montes.<br>                                
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet.</p>
+                            <a href="#" class="tabs__body-btn btn-primary">Download</a>
+                        </div>
+                        <div class="tabs__img">
+                                <img class="tabs__img-3" src="http://chudesnyemesta.ru/wp-content/uploads/2016/04/Most-Zolotye-vorota-San-Frantsisko-SSHA.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section> -->
-    <!-- Benefits -->
+    </div>
+<!-- Benefits -->
     <section class="benefits">
         <div class="wrapper">
             <div class="section-head">
@@ -240,7 +267,7 @@
                                 consectetur adipisicing elit. Doloribus 
                                 accusamus expedita repellat similique 
                                 odio aspernatur ex, architecto eaque 
-                                quo suscipit. lo</p>  </div>
+                                quo suscipit.</p>  </div>
                         <div class="reviews__customers">
                             <div class="reviews__photo">
                                 <img src="./assets/images/reviews/person1.png" alt="">
@@ -286,6 +313,70 @@
                         </div>
                     </div>
                 </div>
+                <!-- <div class="reviews row">
+                    
+                    <figure class="reviews__card col-4 item" id="item-1">
+                        <div class="reviews__text">
+                            <p class="text">Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.</p>  </div>
+                        <div class="reviews__customers">
+                            <div class="reviews__photo">
+                                <img src="./assets/images/reviews/person1.png" alt="">
+                            </div>
+                            <div class="reviews__person">
+                                <h3 class="reviews__name">Davis Rhiel Madsen</h3>
+                                <p class="reviews__position">Manager</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="reviews__card col-4 item" id="item-2">
+                        <div class="reviews__text">
+                            <p class="text">Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.</p>  </div>
+                        <div class="reviews__customers">
+                            <div class="reviews__photo">
+                                <img src="./assets/images/reviews/person2.png" alt="">
+                            </div>
+                            <div class="reviews__person">
+                                <h3 class="reviews__name">Jaydon Rosser</h3>
+                                <p class="reviews__position">Manager</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="reviews__card col-4 item" id="item-3">
+                        <div class="reviews__text">
+                            <p class="text">Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.</p>  </div>
+                        <div class="reviews__customers">
+                            <div class="reviews__photo">
+                                <img src="./assets/images/reviews/person3.png" alt="">
+                            </div>
+                            <div class="reviews__person">
+                                <h3 class="reviews__name">Cooper Dorwart</h3>
+                                <p class="reviews__position">Manager</p>
+                            </div>
+                        </div>
+                    </figure>
+                        <div class="gallery items-3">
+                                <div id="item-1" class="control-operator"></div>
+                                <div id="item-2" class="control-operator"></div>
+                                <div id="item-3" class="control-operator"></div>
+                        <div class="controls">
+                                <a href="#item-1" class="control-button">•</a>
+                                <a href="#item-2" class="control-button">•</a>
+                                <a href="#item-3" class="control-button">•</a>
+                        </div>
+                    </div>
+                </div>  -->
             </div>
         </section>
     <!-- Banner -->
