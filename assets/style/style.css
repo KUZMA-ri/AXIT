@@ -194,7 +194,6 @@ img {
         padding-top: 56px;
         width: 100%;
     }
-
 }
 /* .......................................PROMO................................ */
 .promo{
@@ -244,7 +243,9 @@ img {
     line-height: 21px;
     margin: 42px 0;
 }
+/*------------------------------------- */
 /* component BTN start */
+/* ------------------------------------ */
 .btn__button-download {
     color: var(--color-primary);
     background: none;
@@ -264,7 +265,10 @@ img {
     color: var(--bg-color-dark);
     transition: 0.3s;
 }
+/* ------------------------------ */
 /* component BTN end */
+/* ------------------------------ */
+
 .promo__btn{
     min-width: 270px;
 }
@@ -301,7 +305,9 @@ img {
 .promo-input{
     padding: 35px 15px 5px 15px;
 }
+/* ------------------------------ */
 /* component input-form start */
+/* ------------------------------ */
 .input{
     width: 100%;
     border-bottom: 1px solid #BDBDBD;
@@ -314,14 +320,19 @@ img {
 .input:focus{
     border-bottom: 1px solid var(--btn-color2);
 }
+/* ------------------------------ */
 /* component input form end */
+/* ------------------------------ */
+
 .promo__button{
     margin-top: 75px;
 }
 .promo__form-btn{
     border-radius: 0 0 10px 10px;
 }
+/* ------------------------------ */
 /* component BTN color Pink start */
+/* ------------------------------ */
 .form__btn_pink{
     display: block;
     background-color: var(--btn-color2);
@@ -341,7 +352,9 @@ img {
     background-color: var(--btn-color2);
     box-shadow: inset 0px 0px 10px var(--color-hover);
 }
+/* ------------------------------ */
 /* component BTN color Pink end */
+/* ------------------------------ */
 
 @media screen and (max-width: 1024px) {
     .promo__container{
@@ -386,11 +399,12 @@ img {
         flex-wrap: wrap;
     }
     .promo__content{
-        width: calc(100% / 12 * 12 - 15px);
+        width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .promo__logo-img{
         opacity: 0;
@@ -412,7 +426,7 @@ img {
         line-height: 21px; 
     }
     .promo__btn{
-        min-width: 400px;
+        width: 380px;
     }
     .promo__form-container{
         display: block;
@@ -421,7 +435,31 @@ img {
     }
     .promo__form{
         padding-top: 15px;
-
+    }
+}
+@media screen and (max-width: 380px){
+    .promo__title{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .promo__text{
+        max-width: 288px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+    }
+    .promo__btn{
+        max-width: 288px;
+    }
+    .promo__form-title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .promo__form-input{
+        padding: 0 20px;
     }
 }
 /* ......................................Section Social.......................................... */
@@ -477,8 +515,7 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.social-list__item {
+    .social-list__img{
     max-width: 40px;
     max-height: 70px;
 }
@@ -496,6 +533,37 @@ img {
     .social-list__item{
         max-width: 53px;
         max-height: 53px;
+    }
+}
+@media screen and (max-width: 380px){
+    .social__inner{
+        padding: 0;
+    }
+    .social__info{
+        width: 100%;
+        text-align: center;
+    }
+    .social__title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .social__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .social__icons{
+        display: flex;
+        width: 100%; 
+    }
+    .social__list{
+        width: 100%;
+        padding-left: 0;
+    }
+    .social-list__item{
+        max-width: 26px;
+        max-height: 26px;
     }
 }
 /* .........................................Section Tabs................................. */
@@ -768,6 +836,9 @@ img {
     }
 }
 @media screen and (max-width: 380px){
+    .benefits{
+        padding: 50px 0;
+    }
     .col-4 {
         width: calc(100% / 12 * 12 - var(--gutter) * 2);
         margin-bottom: 25px;
@@ -913,6 +984,9 @@ img {
     padding: 70px 15px;
     text-align: center;
 }
+.reviews__cards{
+    margin-top: 83px;
+}
 .reviews__text{
     font-family: 'Raleway';
     font-style: normal;
@@ -985,6 +1059,9 @@ img {
         line-height: 16px;
     }
 }
+/* -------------------------- */
+/* Review slider */
+/* -------------------------- */
 
 /*................................................Section Banner...................................... */
 .banner {
@@ -1032,6 +1109,21 @@ img {
 @media screen and (max-width: 1024px){
     .banner__btn{
         width: 318px;
+    }
+}
+@media screen and (max-width: 380px){
+    .section-head__title_light {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section-head__text_light{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .banner__btn{
+        max-width: 288px;
     }
 }
 
@@ -1090,6 +1182,26 @@ textarea{
         width: 318px;
     }
 }
+@media screen and (max-width: 380px){
+    .contacts{
+        padding: 50px 0;
+    }
+    .contacts__form{
+        flex-direction: column;
+        margin-top: 85px;
+    }
+    .contacts__form-info{
+        width: 100%;
+    }
+    .contacts__form-message{
+        width: 100%;
+        margin-top: 50px;
+        padding-bottom: 182px;
+    }
+    .contacts__btn{
+        max-width: 288px
+    }
+}
 /* ...............................................Footer...................................... */
 footer {
     width: 100%;
@@ -1122,4 +1234,10 @@ footer {
 .footer__icon {
     width: 53px;
     margin-right: 40px;
+}
+@media screen and (max-width: 380px){
+    .footer__icon {
+        width: 26px;
+        margin-right: 19px;
+    }
 }

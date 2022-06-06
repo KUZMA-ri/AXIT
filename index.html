@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendors/slick/slick.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Document</title>
 </head>
@@ -47,7 +48,7 @@
                     <h1 class="promo__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                     <p class="promo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <!-- component BTN start -->
-                    <div class="btn-download ">
+                    <div class="btn-download">
                         <input type="button" value="download" class="promo__btn btn__button-download">
                     </div>
                     <!-- component BTN end -->
@@ -85,13 +86,13 @@
                 </div>
                 <div class="social__icons">
                     <ul class="social__list">
-                            <li><a class="social-list__item" href="http://www.facebook.com"><img src='assets/images/social-icons/facebook_icon.png'/></a></li>
-                            <li><a class="social-list__item" href="http://www.twitter.com"><img src='assets/images/social-icons/twitter_icon.png' /></a></li>
-                            <li><a class="social-list__item" href="https://ru.linkedin.com"><img src='assets/images/social-icons/linkedin_icon.png' /></a></li>
-                            <li><a class="social-list__item" href="https://www.pinterest.com"><img src='assets/images/social-icons/pinterest_icon.png' /></a></li>
-                            <li><a class="social-list__item" href="https://www.instagram.com"><img src='assets/images/social-icons/instagram_icon.png' /></a></li>
-                            <li><a class="social-list__item" href="https://github.com"><img src='assets/images/social-icons/github_icon.png' /></a></li>
-                            <li><a class="social-list__item" href="#"><img src='assets/images/social-icons/rss_icon.png' /></a></li>
+                            <li><a class="social-list__item" href="http://www.facebook.com"><img class="social-list__img" src='assets/images/social-icons/facebook_icon.png'/></a></li>
+                            <li><a class="social-list__item" href="http://www.twitter.com"><img class="social-list__img" src='assets/images/social-icons/twitter_icon.png' /></a></li>
+                            <li><a class="social-list__item" href="https://ru.linkedin.com"><img class="social-list__img" src='assets/images/social-icons/linkedin_icon.png' /></a></li>
+                            <li><a class="social-list__item" href="https://www.pinterest.com"><img class="social-list__img" src='assets/images/social-icons/pinterest_icon.png' /></a></li>
+                            <li><a class="social-list__item" href="https://www.instagram.com"><img class="social-list__img" src='assets/images/social-icons/instagram_icon.png' /></a></li>
+                            <li><a class="social-list__item" href="https://github.com"><img class="social-list__img" src='assets/images/social-icons/github_icon.png' /></a></li>
+                            <li><a class="social-list__item" href="#"><img class="social-list__img" src='assets/images/social-icons/rss_icon.png' /></a></li>
                     </ul>
                 </div>
             </div>
@@ -168,19 +169,19 @@
                 <h2 class="section-head__title">WHY THIS IS AWESOME</h2>
                 <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div class="benefits row">
-                <div class="benefits col-4">
+            <div class="benefits__cards row">
+                <div class="benefits__card col-4">
                     <img src="assets/images/icons/about_icon_1.png" alt="" class="benefits__icon-card">
                     <h2 class="benefits__subtitle">Thoughtful Design</h2>
                     <p class="benefits__text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                 </div>
-                <div class="benefits col-4">
+                <div class="benefits__card col-4">
                     <img src="assets/images/icons/about_icon_2.png" alt="" class="benefits__icon-card">
                     <h2 class="benefits__subtitle">Thoughtful Design</h2>
                     <p class="benefits__text-card">Lorem ipsum dolor sit amet, consectetur adipiscing 
                         elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                 </div>
-                <div class="benefits col-4">
+                <div class="benefits__card col-4">
                     <img src="assets/images/icons/about_icon_3.png" alt="" class="benefits__icon-card">
                     <h2 class="benefits__subtitle">Thoughtful Design</h2>
                     <p class="benefits__text-card">Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -260,7 +261,7 @@
                     <h2 class="section-head__title">what our customers are saying</h2>
                     <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <div class="reviews row">
+                <div class="reviews__cards row">
                     <div class="reviews__card col-4">
                         <div class="reviews__text">
                             <p class="text">Lorem ipsum dolor sit amet, 
@@ -313,70 +314,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="reviews row">
-                    
-                    <figure class="reviews__card col-4 item" id="item-1">
-                        <div class="reviews__text">
-                            <p class="text">Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. Doloribus 
-                                accusamus expedita repellat similique 
-                                odio aspernatur ex, architecto eaque 
-                                quo suscipit.</p>  </div>
-                        <div class="reviews__customers">
-                            <div class="reviews__photo">
-                                <img src="./assets/images/reviews/person1.png" alt="">
-                            </div>
-                            <div class="reviews__person">
-                                <h3 class="reviews__name">Davis Rhiel Madsen</h3>
-                                <p class="reviews__position">Manager</p>
-                            </div>
-                        </div>
-                    </figure>
-                    <figure class="reviews__card col-4 item" id="item-2">
-                        <div class="reviews__text">
-                            <p class="text">Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. Doloribus 
-                                accusamus expedita repellat similique 
-                                odio aspernatur ex, architecto eaque 
-                                quo suscipit.</p>  </div>
-                        <div class="reviews__customers">
-                            <div class="reviews__photo">
-                                <img src="./assets/images/reviews/person2.png" alt="">
-                            </div>
-                            <div class="reviews__person">
-                                <h3 class="reviews__name">Jaydon Rosser</h3>
-                                <p class="reviews__position">Manager</p>
-                            </div>
-                        </div>
-                    </figure>
-                    <figure class="reviews__card col-4 item" id="item-3">
-                        <div class="reviews__text">
-                            <p class="text">Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. Doloribus 
-                                accusamus expedita repellat similique 
-                                odio aspernatur ex, architecto eaque 
-                                quo suscipit.</p>  </div>
-                        <div class="reviews__customers">
-                            <div class="reviews__photo">
-                                <img src="./assets/images/reviews/person3.png" alt="">
-                            </div>
-                            <div class="reviews__person">
-                                <h3 class="reviews__name">Cooper Dorwart</h3>
-                                <p class="reviews__position">Manager</p>
-                            </div>
-                        </div>
-                    </figure>
-                        <div class="gallery items-3">
-                                <div id="item-1" class="control-operator"></div>
-                                <div id="item-2" class="control-operator"></div>
-                                <div id="item-3" class="control-operator"></div>
-                        <div class="controls">
-                                <a href="#item-1" class="control-button">•</a>
-                                <a href="#item-2" class="control-button">•</a>
-                                <a href="#item-3" class="control-button">•</a>
-                        </div>
-                    </div>
-                </div>  -->
             </div>
         </section>
     <!-- Banner -->
@@ -443,7 +380,5 @@
             </div>
     </footer>
     <script src="./assets/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
