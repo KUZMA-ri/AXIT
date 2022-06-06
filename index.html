@@ -17,14 +17,28 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__nav-header">
-                
                 <div class="header__logo">
                     <a href="#logo"><img class="header__logo-img" src="./assets/images/header/logo.png" alt=""></a>
                 </div>
                 <nav class="header__nav">
-                    <ul class="header__list" >
+                    <ul class="header__list">
                         <li class="header__item"><a class="header__link" href="#features" js-scroll>Features</a></li>
-                        <li class="header__item"><a class="header__link" href="#about" js-scroll>About</a></li>
+                        <li class="header__item"><a class="header__link" href="#about" js-scroll>About</a>
+                            <span class="header__item-arrow arrow"></span>
+                            <ul class="header__sublist">
+                                <li class="header__subitem"><a href="">Our company</a>
+                                <span class="header__subitem-arrow arrow"></span>
+                                    <ul class="header__sub-sublist">
+                                        <li class="header__sub-subitem"><a href="">History</a> </li>
+                                        <li class="header__sub-subitem"><a href="">Corporate functions</a></li>
+                                        <li class="header__sub-subitem"><a href="">Our offering</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__subitem"><a href="">Team</a></li>
+                                <li class="header__subitem"><a href="">Our projects</a></li>
+                                <li class="header__subitem"><a href="">Vacancy</a></li>
+                            </ul>
+                        </li>
                         <li class="header__item"><a class="header__link" href="#pricing" js-scroll>Pricing</a></li>
                         <li class="header__item"><a class="header__link" href="#reviews" js-scroll>Reviews</a></li>
                         <li class="header__item"><a class="header__link" href="#contact" js-scroll>Contact</a></li>
@@ -49,9 +63,34 @@
                     <p class="promo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <!-- component BTN start -->
                     <div class="btn-download">
-                        <input type="button" value="download" class="promo__btn btn__button-download">
+                        <input type="button" value="download" class="promo__btn btn__button-download" id="myBtn">
                     </div>
                     <!-- component BTN end -->
+                    <!-- modal window start -->
+                    <div class="promo__modal" id="myModal">
+                        <div class="promo__modal-content">
+                            <span class="promo__modal-close">&times;</span>
+                            <h2 class="promo__modal-title">Login form</h2>
+                            <div class="promo__form-input">
+                                <div class="promo__form-item">
+                                    <input class="promo-input input" type="text" required placeholder="Name" onfocus="this.value=''" value="">
+                                </div>
+                                <div class="promo__form-item">
+                                    <input class="promo-input input" type="text" required placeholder="Username" onfocus="this.value=''" value="">
+                                </div>
+                                <div class="promo__form-item">
+                                    <input class="promo-input input"type="email" required placeholder="Email" onfocus="this.value=''" value="">
+                                </div>
+                                <div class="promo__form-item">
+                                    <input class="promo-input input"type="password" required placeholder="Password" onfocus="this.value=''" value="">
+                                </div>  
+                                <div class="promo__button">
+                                    <button class="promo__form-btn form__btn_pink modal__btn">Enter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal window end -->
                 </div>
                 <div class="promo__form-container">
                     <form class="promo__form">

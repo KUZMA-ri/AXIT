@@ -1,4 +1,4 @@
-// menu burger
+// menu burger 
 (function () {
     const burger = document.querySelector('.burger');
     burger.addEventListener('click', () => {
@@ -61,3 +61,24 @@
     };
     scrollTo();
 }());
+
+
+//modal window
+
+var modal = document.getElementById('myModal');
+var btn = document.getElementById('myBtn');
+var span = document.getElementsByClassName("promo__modal-close")[0];
+
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

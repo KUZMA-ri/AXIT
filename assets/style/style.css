@@ -60,6 +60,11 @@ a:hover {
     text-decoration: none;
 }
 
+a { 
+    color: inherit; 
+} 
+
+
 ul li {
     list-style: none;
 }
@@ -195,6 +200,68 @@ img {
         width: 100%;
     }
 }
+
+/* submenu start */
+.header__list>li:hover .header__sublist{
+    display: block;
+}
+.header__sublist{
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 140px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    background-color: #000000;
+    color: var(--color-primary);
+    padding: 20px 10px;
+    border-radius: 0 0 10px 10px;
+}
+.header__sublist>li:hover .header__sub-sublist{
+    display: inline-block;
+}
+.header__subitem{
+    display: block;
+    padding: 10px;
+    min-width: 200px;    
+}
+.header__sub-sublist{
+    display: none;
+    position: absolute;
+    top: 18px;
+    left: 80%;
+    background-color: #000000;
+    border-radius: 0 0 10px 10px;
+}
+.header__sub-subitem{
+    display: block;
+    padding: 10px;
+    min-width: 200px;
+}
+.header__subitem a:hover{
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-hover);
+}
+.arrow{
+    position: absolute;
+    left: 235px;
+    top: 23px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid var(--color-primary);
+    border-right: 5px  solid transparent;
+    border-left: 5px  solid transparent;
+}
+.header__subitem-arrow{
+    left: 186px;
+    top: 34px;
+    z-index: 6;
+    transform: rotateZ(-90deg);
+}
+    /* submenu end */
 /* .......................................PROMO................................ */
 .promo{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/promo/bg.png) no-repeat center;
@@ -360,6 +427,9 @@ img {
     .promo__container{
         padding: 100px 15px;
     }
+    .promo__logo-img{
+        margin-top: 50px;
+    }
     .promo__title{
         font-weight: 500;
         font-size: 36px;
@@ -462,6 +532,42 @@ img {
         padding: 0 20px;
     }
 }
+
+/* Modal window start */
+.promo__modal{
+    /* display: none; */
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.promo__modal-content{
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+}
+.promo__modal-close{
+    color: #211f1f;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.promo__modal-title{
+    border-bottom: 2px dotted rgb(203, 117, 117);
+    padding: 20px;
+}
+.modal__btn{
+    border-radius: 15px;
+}
+
+/* Modal window end */
 /* ......................................Section Social.......................................... */
 .social {
     width: 100%;
@@ -516,7 +622,7 @@ img {
     flex-wrap: wrap;
 }
     .social-list__img{
-    max-width: 40px;
+    max-width: 70px;
     max-height: 70px;
 }
 @media screen and (max-width: 1024px){
@@ -530,7 +636,7 @@ img {
         font-size: 14px;
         line-height: 16px;
     }
-    .social-list__item{
+    .social-list__img{
         max-width: 53px;
         max-height: 53px;
     }
@@ -1239,5 +1345,10 @@ footer {
     .footer__icon {
         width: 26px;
         margin-right: 19px;
+    }
+    .footer__copyright{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
