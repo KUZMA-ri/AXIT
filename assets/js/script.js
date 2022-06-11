@@ -1,27 +1,3 @@
-// menu burger 
-(function () {
-    const burger = document.querySelector('.burger');
-    burger.addEventListener('click', () => {
-        burger.classList.toggle('burger_active');
-    });
-}());
-
-(function () {
-    const burger = document.querySelector('.burger');
-    const headerActive = document.querySelector('.header__nav')
-    burger.addEventListener('click', () => {
-        headerActive.classList.toggle('header__nav_active');
-    });
-}());
-
-(function () {
-    const burger = document.querySelector('.burger');
-    const headerList = document.querySelector('.header__list')
-    burger.addEventListener('click', () => {
-        headerList.classList.toggle('header__list_active');
-    });
-}());
-
 // Scroll to anchors
 (function () {
 
@@ -63,11 +39,37 @@
 }());
 
 
+
+// menu burger 
+(function () {
+    const burger = document.querySelector('.burger');
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('burger_active');
+    });
+}());
+
+(function () {
+    const burger = document.querySelector('.burger');
+    const headerActive = document.querySelector('.header__nav')
+    burger.addEventListener('click', () => {
+        headerActive.classList.toggle('header__nav_active');
+    });
+}());
+
+(function () {
+    const burger = document.querySelector('.burger');
+    const headerList = document.querySelector('.header__list')
+    burger.addEventListener('click', () => {
+        headerList.classList.toggle('header__list_active');
+    });
+}());
+
+
 //modal window
 
 var modal = document.getElementById('myModal');
 var btn = document.getElementById('myBtn');
-var span = document.getElementsByClassName("promo__modal-close")[0];
+var span = document.getElementsByClassName("modal-close")[0];
 
 btn.onclick = function () {
     modal.style.display = "block";
@@ -81,4 +83,6 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};
+
+

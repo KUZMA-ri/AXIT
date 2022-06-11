@@ -7,8 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="vendors/slick/slick.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Document</title>
 </head>
@@ -18,12 +16,12 @@
         <div class="wrapper">
             <div class="header__nav-header">
                 <div class="header__logo">
-                    <a href="#logo"><img class="header__logo-img" src="./assets/images/header/logo.png" alt=""></a>
+                    <a class="header__logo-link js-scroll" href="#promo"><img class="header__logo-img" src="./assets/images/header/logo.png" alt="Logo"></a>
                 </div>
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item"><a class="header__link" href="#features" js-scroll>Features</a></li>
-                        <li class="header__item"><a class="header__link" href="#about" js-scroll>About</a>
+                        <li class="header__item"><a class="header__link  js-scroll" href="#features" >Features</a></li>
+                        <li class="header__item"><a class="header__link  js-scroll" href="#about">About</a>
                             <span class="header__item-arrow arrow"></span>
                             <ul class="header__sublist">
                                 <li class="header__subitem"><a href="">Our company</a>
@@ -39,9 +37,9 @@
                                 <li class="header__subitem"><a href="">Vacancy</a></li>
                             </ul>
                         </li>
-                        <li class="header__item"><a class="header__link" href="#pricing" js-scroll>Pricing</a></li>
-                        <li class="header__item"><a class="header__link" href="#reviews" js-scroll>Reviews</a></li>
-                        <li class="header__item"><a class="header__link" href="#contact" js-scroll>Contact</a></li>
+                        <li class="header__item"><a class="header__link  js-scroll" href="#pricing">Pricing</a></li>
+                        <li class="header__item"><a class="header__link  js-scroll" href="#reviews">Reviews</a></li>
+                        <li class="header__item"><a class="header__link  js-scroll" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="burger">
@@ -54,7 +52,7 @@
         </div>
     </header>
     <!-- Promo -->
-    <section class="promo" id="logo">
+    <section class="promo" id="promo">
         <div class="wrapper">
             <div class="promo__container">
                 <div class="promo__content">
@@ -62,53 +60,24 @@
                     <h1 class="promo__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                     <p class="promo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <!-- component BTN start -->
-                    <div class="btn-download">
-                        <input type="button" value="download" class="promo__btn btn__button-download" id="myBtn">
-                    </div>
+                        <input type="button" value="download" class="promo__btn btn-outlined" id="myBtn">
                     <!-- component BTN end -->
-                    <!-- modal window start -->
-                    <div class="promo__modal" id="myModal">
-                        <div class="promo__modal-content">
-                            <span class="promo__modal-close">&times;</span>
-                            <h2 class="promo__modal-title">Login form</h2>
-                            <div class="promo__form-input">
-                                <div class="promo__form-item">
-                                    <input class="promo-input input" type="text" required placeholder="Name" onfocus="this.value=''" value="">
-                                </div>
-                                <div class="promo__form-item">
-                                    <input class="promo-input input" type="text" required placeholder="Username" onfocus="this.value=''" value="">
-                                </div>
-                                <div class="promo__form-item">
-                                    <input class="promo-input input"type="email" required placeholder="Email" onfocus="this.value=''" value="">
-                                </div>
-                                <div class="promo__form-item">
-                                    <input class="promo-input input"type="password" required placeholder="Password" onfocus="this.value=''" value="">
-                                </div>  
-                                <div class="promo__button">
-                                    <button class="promo__form-btn form__btn_pink modal__btn">Enter</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- modal window end -->
                 </div>
                 <div class="promo__form-container">
                     <form class="promo__form">
                         <h2 class="promo__form-title">Try Your <span class="promo__form-title_color">FREE</span> Trial Today</h2>
-                        <div class="promo__form-input">
-                            <div class="promo__form-item">
+                        <div class="promo__form-input form-input">
+                            <div class="promo__form-item form-item">
                                 <input class="promo-input input" type="text" required placeholder="Name" onfocus="this.value=''" value="">
                             </div>
-                            <div class="promo__form-item">
+                            <div class="promo__form-item form-item">
                                 <input class="promo-input input"type="email" required placeholder="Email" onfocus="this.value=''" value="">
                             </div>
-                            <div class="promo__form-item">
+                            <div class="promo__form-item form-item">
                                 <input class="promo-input input"type="password" required placeholder="Password" onfocus="this.value=''" value="">
                             </div>  
                         </div>
-                        <div class="promo__button ">
-                            <button class="promo__form-btn form__btn_pink">Get Started</button>
-                        </div>    
+                            <button class="promo__form-btn prime-btn">Get Started</button>  
                     </form>
                 </div>
             </div>
@@ -117,14 +86,14 @@
     <!-- Social -->
     <section class="social">
         <div class="wrapper">
-            <div class="social__inner">
-                <div class="social__info">
+            <div class="social__inner row">
+                <div class="social__info col-5">
                     <h2 class="social__title">Social Media</h2>
                     <p class="social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Aenean euismod bibendum laoreet.</p>
                 </div>
-                <div class="social__icons">
-                    <ul class="social__list">
+                <div class="social__icons col-7">
+                    <ul class="social__list social-list">
                             <li><a class="social-list__item" href="http://www.facebook.com"><img class="social-list__img" src='assets/images/social-icons/facebook_icon.png'/></a></li>
                             <li><a class="social-list__item" href="http://www.twitter.com"><img class="social-list__img" src='assets/images/social-icons/twitter_icon.png' /></a></li>
                             <li><a class="social-list__item" href="https://ru.linkedin.com"><img class="social-list__img" src='assets/images/social-icons/linkedin_icon.png' /></a></li>
@@ -157,7 +126,7 @@
                                 penatibus et magnis dis parturient montes.<br>                                
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
                                 bibendum laoreet.</p>
-                            <a href="#" class="tabs__body-btn btn-primary">Download</a>
+                            <button class="tabs__body-btn btn-primary">Download</button>
                         </div>
                         <div class="tabs__img">
                                 <img class="tabs__img-1" src="assets/images/tabs/tabs-image.png" alt="">
@@ -174,7 +143,7 @@
                                 penatibus et magnis dis parturient montes.<br>                                
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
                                 bibendum laoreet.</p>
-                            <a href="#" class="tabs__body-btn btn-primary">Download</a>
+                            <button class="tabs__body-btn btn-primary">Download</button>
                         </div>
                         <div class="tabs__img">
                                 <img class="tabs__img-2" src="https://2.bp.blogspot.com/-T9_EGQB-UBU/V7sQr6Wil7I/AAAAAAAACTU/i6y5RlpQCEA9P52QcmMItHJjhWR3PTQ2gCLcB/s1600/USA_10654_Bryce_Canyon_Luca_Galuzzi_2007%2Bv3.jpg" alt="">
@@ -191,7 +160,7 @@
                                 penatibus et magnis dis parturient montes.<br>                                
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
                                 bibendum laoreet.</p>
-                            <a href="#" class="tabs__body-btn btn-primary">Download</a>
+                            <button class="tabs__body-btn btn-primary">Download</button>
                         </div>
                         <div class="tabs__img">
                                 <img class="tabs__img-3" src="http://chudesnyemesta.ru/wp-content/uploads/2016/04/Most-Zolotye-vorota-San-Frantsisko-SSHA.jpg" alt="">
@@ -204,7 +173,7 @@
 <!-- Benefits -->
     <section class="benefits" id="about">
         <div class="wrapper">
-            <div class="section-head">
+            <div class=" benefits-head section-head">
                 <h2 class="section-head__title">WHY THIS IS AWESOME</h2>
                 <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -233,60 +202,60 @@
     <section class="price" id="pricing">
         <div class="wrapper">
             <!-- Повторяющийся блок -->
-            <div class="section-head">
+            <div class="price-head section-head">
                 <h2 class="section-head__title">Pricing options</h2>
                 <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <!--  -->
+            <!-- component price-card -->
             <div class="price__cards row">
-                <div class="price__card col-4">
-                    <div class="price__card-header">
-                        <h4 class="price__name">Basic</h4>
-                        <h3 class="price__value">$10</h3>
-                        <h5 class="price__free">Free for life</h5>
+                <div class="price__card price-card col-4">
+                    <div class="price-card__header">
+                        <h4 class="price-card__name">Basic</h4>
+                        <h3 class="price-card__value">$10</h3>
+                        <h5 class="price-card__free">Free for life</h5>
                     </div>
-                    <div class="price__card-body">
-                        <ul class="price__pricing-options">
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
+                    <div class="price-card__body">
+                        <ul class="price-card__pricing-options">
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
                         </ul>
                     </div>
                 </div>
-                <div class="price__card col-4">
-                    <div class="price__card-header">
-                        <h4 class="price__name">Optima</h4>
-                        <h3 class="price__value">$20</h3>
-                        <h5 class="price__free">Free for life</h5>
+                <div class="price__card price-card col-4">
+                    <div class="price-card__header">
+                        <h4 class="price-card__name">Optima</h4>
+                        <h3 class="price-card__value">$20</h3>
+                        <h5 class="price-card__free">Free for life</h5>
                     </div>
-                    <div class="price__card-body">
-                        <ul class="price__pricing-options">
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
+                    <div class="price-card__body">
+                        <ul class="price-card__pricing-options">
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
                         </ul>
                     </div>
                 </div>
-                <div class="price__card col-4">
-                    <div class="price__card-header">
-                        <h4 class="price__name">Pro</h4>
-                        <h3 class="price__value">$30</h3>
-                        <h5 class="price__free">Free for life</h5>
+                <div class="price__card price-card col-4">
+                    <div class="price-card__header">
+                        <h4 class="price-card__name">Pro</h4>
+                        <h3 class="price-card__value">$30</h3>
+                        <h5 class="price-card__free">Free for life</h5>
                     </div>
-                    <div class="price__card-body">
-                        <ul class="price__pricing-options">
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
+                    <div class="price-card__body">
+                        <ul class="price-card__pricing-options">
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
+                            <li class="price-card__item">1 gb of space</li>
                         </ul>
                     </div>
                 </div>
@@ -301,54 +270,57 @@
                     <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="reviews__cards row">
-                    <div class="reviews__card col-4">
-                        <div class="reviews__text">
-                            <p class="text">Lorem ipsum dolor sit amet, 
+                    <div class="reviews__card reviews-card col-4">
+                        <div class="reviews-card__text">
+                            <p>Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit. Doloribus 
                                 accusamus expedita repellat similique 
                                 odio aspernatur ex, architecto eaque 
-                                quo suscipit.</p>  </div>
-                        <div class="reviews__customers">
-                            <div class="reviews__photo">
+                                quo suscipit.</p>
+                        </div>
+                        <div class="reviews-card__customers">
+                            <div class="reviews-card__photo">
                                 <img src="./assets/images/reviews/person1.png" alt="">
                             </div>
-                            <div class="reviews__person">
-                                <h3 class="reviews__name">Davis Rhiel Madsen</h3>
-                                <p class="reviews__position">Manager</p>
+                            <div class="reviews-card__person">
+                                <h3 class="reviews-card__name">Davis Rhiel Madsen</h3>
+                                <p class="reviews-card__position">Manager</p>
                             </div>
                         </div>
                     </div>
-                    <div class="reviews__card col-4">
-                        <div class="reviews__text">
-                            <p class="text">Lorem ipsum dolor sit amet, 
+                    <div class="reviews__card reviews-card col-4">
+                        <div class="reviews-card__text">
+                            <p>Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit. Doloribus 
                                 accusamus expedita repellat similique 
                                 odio aspernatur ex, architecto eaque 
-                                quo suscipit.</p>  </div>
-                        <div class="reviews__customers">
-                            <div class="reviews__photo">
+                                quo suscipit.</p>
+                        </div>
+                        <div class="reviews-card__customers">
+                            <div class="reviews-card__photo">
                                 <img src="./assets/images/reviews/person2.png" alt="">
                             </div>
-                            <div class="reviews__person">
-                                <h3 class="reviews__name">Jaydon Rosser</h3>
-                                <p class="reviews__position">Manager</p>
+                            <div class="reviews-card__person">
+                                <h3 class="reviews-card__name">Jaydon Rosser</h3>
+                                <p class="reviews-card__position">Manager</p>
                             </div>
                         </div>
                     </div>
-                    <div class="reviews__card col-4">
-                        <div class="reviews__text">
-                            <p class="text">Lorem ipsum dolor sit amet, 
+                    <div class="reviews__card reviews-card col-4">
+                        <div class="reviews-card__text">
+                            <p>Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit. Doloribus 
                                 accusamus expedita repellat similique 
                                 odio aspernatur ex, architecto eaque 
-                                quo suscipit.</p>  </div>
-                        <div class="reviews__customers">
-                            <div class="reviews__photo">
+                                quo suscipit.</p>
+                        </div>
+                        <div class="reviews-card__customers">
+                            <div class="reviews-card__photo">
                                 <img src="./assets/images/reviews/person3.png" alt="">
                             </div>
-                            <div class="reviews__person">
-                                <h3 class="reviews__name">Cooper Dorwart</h3>
-                                <p class="reviews__position">Manager</p>
+                            <div class="reviews-card__person">
+                                <h3 class="reviews-card__name">Cooper Dorwart</h3>
+                                <p class="reviews-card__position">Manager</p>
                             </div>
                         </div>
                     </div>
@@ -363,9 +335,7 @@
                 <p class="section-head__text_light">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
             </div>
             <!-- component BTN start -->
-            <div class="btn-download">
-                <input type="button" value="download" class="banner__btn btn__button-download">
-            </div>
+                <button type="button" value="download" class="banner__btn btn-outlined">Download</button> 
             <!-- component BTN end -->
         </div>           
     </section>
@@ -376,8 +346,8 @@
                 <h2 class="section-head__title">what our customers are saying</h2>
                 <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <form class="contacts__form">
-                <div class="contacts__form-info">
+            <form class="contacts__form row">
+                <div class="contacts__form-info col-6">
                     <div class="contacts__form-item">
                         <input class="contacts-input input" type="text" required placeholder="Name" onfocus="this.value=''" value="">
                     </div>
@@ -388,17 +358,36 @@
                         <input class="contacts-input input"type="password" required placeholder="Password" onfocus="this.value=''" value="">
                     </div>  
                 </div>
-                <div class="contacts__form-message">
+                <div class="contacts__form-message col-6">
                     <textarea  name="" id="" placeholder="Message"></textarea>
                 </div>
-                <div class="contacts__button">
-                    <button class="contacts__btn form__btn_pink">Send Message</button>
-                </div>
-                
-                
+                <button class="contacts__btn prime-btn">Send Message</button>               
             </form>
         </div>
     </section>
+<!-- modal window -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">Login form</h2>
+            <div class="modal-window__form-input form-input"> 
+                <div class="modal-window__form-item form-item">
+                    <input class="modal-window__form-input input" type="text" required placeholder="Name" onfocus="this.value=''" value="">
+                </div>
+                <div class="modal-window__form-item form-item">
+                    <input class="modal-window__form-input input" type="text" required placeholder="Username" onfocus="this.value=''" value="">
+                </div>
+                <div class="modal-window__form-item form-item">
+                    <input class="modal-window__form-input input"type="email" required placeholder="Email" onfocus="this.value=''" value="">
+                </div>
+                <div class="modal-window__form-item form-item">
+                    <input class="modal-window__form-input input"type="password" required placeholder="Password" onfocus="this.value=''" value="">
+                </div>  
+                    <button class="modal-window__btn prime-btn">Enter</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
             <div class="wrapper">
