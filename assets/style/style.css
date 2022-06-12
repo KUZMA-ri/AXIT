@@ -89,6 +89,53 @@ svg path {
     --mobile-padding:15px;
 }
 /* *{ border:1px solid red; box-sizing:border-box; } */
+
+/* ********************************* */
+/*          Component ROW start      */
+/* ********************************* */
+.row {
+    display: flex;
+    margin: 0 calc(var(--gutter) * -1);
+    flex-wrap: wrap;
+}
+.col-4 {
+    width: calc(100% / 3 - var(--gutter) * 2);
+    margin: 0 var(--gutter);
+}
+.col-5{
+    width: calc(100% / 12 * 5 - 30px);
+    margin: 0 var(--gutter);
+}
+.col-6{
+    width: calc(100% / 12 * 6 - 30px);
+    margin: 0 var(--gutter);
+}
+.col-7{
+    width: calc(100% / 12 * 7 - 30px);
+    margin: 0 var(--gutter);
+}
+@media (max-width: 992px){
+    .col-md-6{
+        width: calc(100% / 12 * 6 - var(--gutter) * 2);
+        margin: 0 var(--gutter);
+    }
+}
+@media (max-width: 768px){
+    .col-sm-12{
+        width: calc(100% / 12 * 12 - var(--gutter) * 2);
+        margin: 0 var(--gutter);
+    }
+}
+@media (max-width: 560px){
+    .col-xs-12{
+        width: calc(100% / 12 * 12 - var(--gutter) * 2);
+        margin: 0 var(--gutter);
+    }
+}
+/* ********************************* */
+/*          Component ROW end        */
+/* ********************************* */
+
 /* ......................................HEADER................................ */
 .header{
     width: 100%;
@@ -596,6 +643,11 @@ svg path {
 .social__inner {
     align-items: center;
 }
+@media screen and (max-width: 768px){
+    .social__inner{
+        flex-direction: column; 
+    }
+}
 @media screen and (max-width: 560px){
     .social__inner{
         padding: 0;
@@ -609,6 +661,14 @@ svg path {
 
 .social__info {
     align-items: center;
+}
+@media screen and (max-width: 768px){
+    .social__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 34px;
+    }
 }
 @media screen and (max-width: 560px){
     .social__info{
@@ -680,10 +740,6 @@ svg path {
     }
 }
 @media screen and (max-width: 560px){
-    .social__icons{
-        display: flex;
-        width: 100%; 
-    }
     .social-list__item{
         max-width: 26px;
         max-height: 26px;
@@ -818,6 +874,10 @@ svg path {
         margin: 50px auto;   
     }
 }
+
+/* ********************************* */
+/*       Component btn-primary start */
+/* ********************************* */
 .btn-primary {
     background: var(--prime-color-light);
     color: var(--white);
@@ -839,6 +899,10 @@ svg path {
     background-color: var(--prime-color-light);
     box-shadow: inset 0px 0px 10px var(--prime-color);
 }
+/* ********************************* */
+/*       Component btn-primary end */
+/* ********************************* */
+
 .tabs__img-1, .tabs__img-2, .tabs__img-3{
     display: block;
     width: 100%;
@@ -880,6 +944,11 @@ svg path {
         padding: 50px 0;
     }
 }
+@media screen and (max-width: 768px){
+    .benefits__card{
+        margin-bottom: 25px;
+    }
+}
 
 .benefits-head{
     margin-bottom: 70px;
@@ -889,6 +958,7 @@ svg path {
         margin-bottom: 65px;
     }
 }
+
 .section-head__title {
     font-family: 'Raleway';
     font-style: normal;
@@ -940,59 +1010,19 @@ svg path {
         line-height: 1.14em;
     }
 }
-/* ********************************* */
-/*          Component ROW start      */
-/* ********************************* */
-.row {
-    display: flex;
-    margin: 0 calc(var(--gutter) * -1);
-    flex-wrap: wrap;
-}
-.col-4 {
-    margin-right: var(--gutter);
-    margin-left: var(--gutter);
-    width: calc(100% / 3 - var(--gutter) * 2);
-}
-@media screen and (max-width: 768px){
-    .col-4 {
-        width: calc(100% / 12 * 6 - var(--gutter) * 2);
-        margin-bottom: 25px;
-    } 
-}
-@media screen and (max-width: 560px){
-    .col-4 {
-        width: calc(100% / 12 * 12 - var(--gutter) * 2);
-        margin-bottom: 25px;
-    }
-}
-.col-5{
-    width: calc(100% / 12 * 5 - 30px);
-    margin: 0 15px;
-}
-.col-6{
-    width: calc(100% / 12 * 6 - 30px);
-    margin: 0 15px;
-}
-.col-7{
-    width: calc(100% / 12 * 7 - 30px);
-    margin: 0 15px;
-}
-/* ********************************* */
-/*          Component ROW end        */
-/* ********************************* */
 
 .benefits__icon-card {
     width: 150px;
     height: 150px;
     margin: 0 auto;
 }
-
 @media screen and (max-width: 1200px){
     .benefits__icon-card{
         width: 120px;
         height: 120px;
     }
 }
+
 .benefits__subtitle {
     font-family: 'Open Sans';
     font-style: normal;
@@ -1039,6 +1069,11 @@ svg path {
 @media screen and (max-width: 1200px){
     .price__cards{
         padding: 0 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .price__card{
+        margin-bottom: 25px;
     }
 }
 .price__card:hover {
@@ -1186,8 +1221,14 @@ svg path {
 .reviews__cards{
     margin-top: 83px;
 }
+@media (max-width: 992px){
+    .reviews__card{
+        margin-bottom: 35px;
+    }
+}
+
 /* **************************************** */
-/* -----component rewiews-card start------- */
+/* -----component reviews-card start------- */
 /* **************************************** */
 .reviews-card__text{
     font-family: 'Raleway';
@@ -1274,7 +1315,7 @@ svg path {
     }
 }
 /* ******************************************** */
-/* --------component rewiews-card  end--------- */
+/* --------component reviews-card  end--------- */
 /* ******************************************** */
 
 /*................................................Section Banner...................................... */
