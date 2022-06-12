@@ -86,7 +86,7 @@ svg path {
     --dark: black;
     --gutter: 15px;
     --content-width: 1200px;
-    --mobile-padding:15px;
+    --mobile-padding: 15px;
 }
 /* *{ border:1px solid red; box-sizing:border-box; } */
 
@@ -135,6 +135,369 @@ svg path {
 /* ********************************* */
 /*          Component ROW end        */
 /* ********************************* */
+
+/*------------------------------------- */
+/* component BTN outlined start */
+/* ------------------------------------ */
+.btn-outlined {
+    color: var(--white);
+    background: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5625em;
+    text-transform: capitalize;
+    border-color: var(--white);
+    cursor: pointer;
+    border: 1px solid var(--white);
+    padding: 15px;
+}
+.btn-outlined:hover {
+    background-color: rgb(251, 251, 250);
+    color: var(--dark);
+    transition: 0.3s;
+}
+/* ------------------------------ */
+/* component BTN outlined end */
+/* ------------------------------ */
+
+/* ------------------------------ */
+/* component input-form start */
+/* ------------------------------ */
+.input{
+    width: 100%;
+    border-bottom: 1px solid #BDBDBD;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.35em;
+}
+.input:focus{
+    border-bottom: 1px solid var(--prime-color-light);
+}
+/* ------------------------------ */
+/* component input form end */
+/* ------------------------------ */
+
+/* ------------------------------ */
+/* component prime-btn start */
+/* ------------------------------ */
+.prime-btn{
+    background-color: var(--prime-color-light);
+    width: 100%;
+    padding: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height:  1.33em;
+    color: var(--white);
+}
+.prime-btn:hover{
+    background-color: var(--prime-color);
+}
+.prime-btn:focus{
+    background-color: var(--prime-color-light);
+    box-shadow: inset 0px 0px 10px var(--prime-color);
+}
+/* ------------------------------ */
+/* component prime-btn end */
+/* ------------------------------ */
+
+/* ********************************* */
+/*       Component btn-primary start */
+/* ********************************* */
+.btn-primary {
+    background: var(--prime-color-light);
+    color: var(--white);
+    border: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5625em;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.btn-primary:hover {
+    background: var(--prime-color);
+    color: var(--white);
+}
+.btn-primary:focus {
+    background-color: var(--prime-color-light);
+    box-shadow: inset 0px 0px 10px var(--prime-color);
+}
+/* ********************************* */
+/*       Component btn-primary end */
+/* ********************************* */
+
+/* ************************************** */
+/* ------component price-card start------ */
+/* ************************************** */
+.price-head{
+    margin-bottom: 79px;
+}
+.price-card__name {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2.0625em;
+    text-transform: capitalize;
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+@media screen and (max-width: 1200px){
+    .price-card__name {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.375em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .price-card__name{
+        font-weight: 700;
+        font-size: 18px;
+        line-height:  1.388em;
+    }
+}
+.price-card__value {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 2.625em;
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+@media screen and (max-width: 1200px){
+    .price-card__value{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16em;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+@media screen and (max-width: 768px){
+    .price-card__value {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.166em;
+    }
+}
+.price-card__free {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3125em;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+@media screen and (max-width: 1200px){
+    .price-card__free{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.166em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .price-card__free{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14em;
+    }
+}
+.price-card__body {
+    background-color: var(--white);
+    width: 100%;
+}
+.price-card__item {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3125em;
+    text-transform: capitalize;
+    color: #86878B;
+    border-bottom: 1px solid #F5F5F5;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+@media screen and (max-width: 1200px){    
+    .price-card__item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .price-card__item{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14em;
+    }
+}
+/* ************************************ */
+/* ------component price-card end------ */
+/* ************************************ */
+
+/* **************************************** */
+/* -----component reviews-card start------- */
+/* **************************************** */
+.reviews-card__text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.166em;
+    background: #E2E2E2;
+    border-radius: 10px;
+    padding: 38px 30px;
+    color: #86878B;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+@media screen and (max-width: 1200px){
+    .reviews-card__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14em;
+    }
+}
+.reviews-card__text:after{
+    content: ''; 
+    position: relative;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #E2E2E2;
+    bottom: -4.5em;
+    z-index: 0;
+}
+.reviews-card__customers{
+    margin-top: 66px;
+    display: flex;
+    text-align: start;
+}
+@media screen and (max-width: 768px){
+    .reviews-card__customers{
+        margin-top: 33px;
+    }
+}
+.reviews-card__photo{
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+@media screen and (max-width: 1200px){
+    .reviews-card__photo{
+        width: 63px;
+        height: 63px;
+    }
+}
+
+.reviews-card__name{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.375em;
+    text-transform: capitalize;
+    color: var(--dark);
+}
+@media screen and (max-width: 1200px){
+    .reviews-card__name{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.388em;
+    }
+}
+.reviews-card__position{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.166em;
+    color: var(--dark);
+    margin-top: 15px;
+}
+@media screen and (max-width: 1200px){
+    .reviews-card__position{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14em;
+    }
+}
+/* ******************************************** */
+/* --------component reviews-card  end--------- */
+/* ******************************************** */
+/* .............................................................................. */
+/* ******************* */
+/* Modal window start  */
+/* ******************* */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-content{
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+}
+.modal-close{
+    color: #211f1f;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal-title{
+    border-bottom: 2px dotted rgb(203, 117, 117);
+    padding: 20px;
+}
+.modal-window__btn{
+    border-radius: 15px;
+    margin-top: 75px;
+}
+.promo__message{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #BDBDBD;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.357em;
+}
+.modal-window__form-input{
+    padding: 35px 15px 5px 15px; 
+}
+/* **************** */
+/* Modal window end */
+/* **************** */
 
 /* ......................................HEADER................................ */
 .header{
@@ -269,7 +632,7 @@ svg path {
     line-height: 1.36em;
     background-color: var(--dark);
     color: var(--white);
-    padding: 20px 10px;
+    padding: 20px 0px;
     border-radius: 0 0 10px 10px;
 }
 .header__sublist>li:hover .header__sub-sublist{
@@ -287,7 +650,7 @@ svg path {
     left: 100%;
     background-color: var(--dark);
     border-radius: 0 0 10px 0;
-    padding: 0 0 0 -10px;
+    padding: 0 0 0 10px;
 }
 .header__sub-subitem{
     display: block;
@@ -465,31 +828,6 @@ svg path {
         text-align: center;
     }
 }
-/*------------------------------------- */
-/* component BTN start */
-/* ------------------------------------ */
-.btn-outlined {
-    color: var(--white);
-    background: none;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.5625em;
-    text-transform: capitalize;
-    border-color: var(--white);
-    cursor: pointer;
-    border: 1px solid var(--white);
-    padding: 15px;
-}
-.btn-outlined:hover {
-    background-color: rgb(251, 251, 250);
-    color: var(--dark);
-    transition: 0.3s;
-}
-/* ------------------------------ */
-/* component BTN end */
-/* ------------------------------ */
 
 .promo__btn{
     min-width: 270px;
@@ -573,52 +911,12 @@ svg path {
 .promo-input{
     padding: 35px 15px 5px 15px;
 }
-/* ------------------------------ */
-/* component input-form start */
-/* ------------------------------ */
-.input{
-    width: 100%;
-    border-bottom: 1px solid #BDBDBD;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.35em;
-}
-.input:focus{
-    border-bottom: 1px solid var(--prime-color-light);
-}
-/* ------------------------------ */
-/* component input form end */
-/* ------------------------------ */
+
 .promo__form-btn{
     border-radius: 0 0 10px 10px;
     margin-top: 75px;
 }
-/* ------------------------------ */
-/* component prime-btn start */
-/* ------------------------------ */
-.prime-btn{
-    background-color: var(--prime-color-light);
-    width: 100%;
-    padding: 15px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height:  1.33em;
-    color: var(--white);
-}
-.prime-btn:hover{
-    background-color: var(--prime-color);
-}
-.prime-btn:focus{
-    background-color: var(--prime-color-light);
-    box-shadow: inset 0px 0px 10px var(--prime-color);
-}
-/* ------------------------------ */
-/* component prime-btn end */
-/* ------------------------------ */
+
 
 @media screen and (max-width: 560px){
     .promo__form-input{
@@ -875,34 +1173,6 @@ svg path {
     }
 }
 
-/* ********************************* */
-/*       Component btn-primary start */
-/* ********************************* */
-.btn-primary {
-    background: var(--prime-color-light);
-    color: var(--white);
-    border: none;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.5625em;
-    text-align: center;
-    text-transform: capitalize;
-    padding: 10px;
-}
-.btn-primary:hover {
-    background: var(--prime-color);
-    color: var(--white);
-}
-.btn-primary:focus {
-    background-color: var(--prime-color-light);
-    box-shadow: inset 0px 0px 10px var(--prime-color);
-}
-/* ********************************* */
-/*       Component btn-primary end */
-/* ********************************* */
-
 .tabs__img-1, .tabs__img-2, .tabs__img-3{
     display: block;
     width: 100%;
@@ -1092,126 +1362,6 @@ svg path {
         padding: 0 16px;
     }
 }
-/* ************************************** */
-/* ------component price-card start------ */
-/* ************************************** */
-.price-head{
-    margin-bottom: 79px;
-}
-.price-card__name {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 2.0625em;
-    text-transform: capitalize;
-    color: var(--white);
-    border-bottom: 1px solid var(--white);
-    padding-top: 18px;
-    padding-bottom: 18px;
-}
-@media screen and (max-width: 1200px){
-    .price-card__name {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.375em;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-@media screen and (max-width: 768px){
-    .price-card__name{
-        font-weight: 700;
-        font-size: 18px;
-        line-height:  1.388em;
-    }
-}
-.price-card__value {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 2.625em;
-    color: var(--white);
-    border-bottom: 1px solid var(--white);
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-@media screen and (max-width: 1200px){
-    .price-card__value{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16em;
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-}
-@media screen and (max-width: 768px){
-    .price-card__value {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.166em;
-    }
-}
-.price-card__free {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.3125em;
-    color: rgba(255, 255, 255, 0.5);
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-@media screen and (max-width: 1200px){
-    .price-card__free{
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.166em;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-@media screen and (max-width: 768px){
-    .price-card__free{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14em;
-    }
-}
-.price-card__body {
-    background-color: var(--white);
-    width: 100%;
-}
-.price-card__item {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.3125em;
-    text-transform: capitalize;
-    color: #86878B;
-    border-bottom: 1px solid #F5F5F5;
-    padding-top: 18px;
-    padding-bottom: 18px;
-}
-@media screen and (max-width: 1200px){    
-    .price-card__item {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .price-card__item{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14em;
-    }
-}
-/* ************************************ */
-/* ------component price-card end------ */
-/* ************************************ */
 
 /* ...............................................Section REVIEWS..................................... */
 .reviews{
@@ -1227,96 +1377,7 @@ svg path {
     }
 }
 
-/* **************************************** */
-/* -----component reviews-card start------- */
-/* **************************************** */
-.reviews-card__text{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.166em;
-    background: #E2E2E2;
-    border-radius: 10px;
-    padding: 38px 30px;
-    color: #86878B;
-    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
-}
-@media screen and (max-width: 1200px){
-    .reviews-card__text{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14em;
-    }
-}
-.reviews-card__text:after{
-    content: ''; 
-    position: relative;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-top: 30px solid #E2E2E2;
-    bottom: -4.5em;
-    z-index: 0;
-}
-.reviews-card__customers{
-    margin-top: 66px;
-    display: flex;
-    text-align: start;
-}
-@media screen and (max-width: 768px){
-    .reviews-card__customers{
-        margin-top: 33px;
-    }
-}
-.reviews-card__photo{
-    width: 70px;
-    height: 70px;
-    margin-right: 30px;
-    border-radius: 50%;
-    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
-}
-@media screen and (max-width: 1200px){
-    .reviews-card__photo{
-        width: 63px;
-        height: 63px;
-    }
-}
 
-.reviews-card__name{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.375em;
-    text-transform: capitalize;
-    color: var(--dark);
-}
-@media screen and (max-width: 1200px){
-    .reviews-card__name{
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.388em;
-    }
-}
-.reviews-card__position{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.166em;
-    color: var(--dark);
-    margin-top: 15px;
-}
-@media screen and (max-width: 1200px){
-    .reviews-card__position{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14em;
-    }
-}
-/* ******************************************** */
-/* --------component reviews-card  end--------- */
-/* ******************************************** */
 
 /*................................................Section Banner...................................... */
 .banner {
@@ -1525,55 +1586,3 @@ footer {
 .footer__icon:hover { 
     fill: var(--prime-color-light);
 }
-/* ******************* */
-/* Modal window start  */
-/* ******************* */
-.modal{
-    display: none;
-    position: fixed;
-    z-index: 8;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-.modal-content{
-    background-color: #ffffff;
-    margin: 15% auto;
-    padding: 20px;
-    border-radius: 15px;
-    width: 40%;
-}
-.modal-close{
-    color: #211f1f;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.modal-title{
-    border-bottom: 2px dotted rgb(203, 117, 117);
-    padding: 20px;
-}
-.modal-window__btn{
-    border-radius: 15px;
-    margin-top: 75px;
-}
-.promo__message{
-    padding-top: 40px;
-    padding-bottom: 100px;
-    border-bottom: 1px solid #BDBDBD;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.357em;
-}
-.modal-window__form-input{
-    padding: 35px 15px 5px 15px; 
-}
-/* **************** */
-/* Modal window end */
-/* **************** */
