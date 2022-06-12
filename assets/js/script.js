@@ -50,9 +50,9 @@
 
 (function () {
     const burger = document.querySelector('.burger');
-    const headerActive = document.querySelector('.header__nav')
+    const headerNav = document.querySelector('.header__nav')
     burger.addEventListener('click', () => {
-        headerActive.classList.toggle('header__nav_active');
+        headerNav.classList.toggle('header__nav_active');
     });
 }());
 
@@ -67,15 +67,15 @@
 
 //modal window
 
-var modal = document.getElementById('myModal');
-var btn = document.getElementById('myBtn');
-var span = document.getElementsByClassName("modal-close")[0];
+const modal = document.getElementById('myModal');
+const openModalBtn = document.getElementById('myBtn');
+const modalClose = document.getElementsByClassName("modal-close")[0];
 
-btn.onclick = function () {
+openModalBtn.onclick = function () {
     modal.style.display = "block";
 }
 
-span.onclick = function () {
+modalClose.onclick = function () {
     modal.style.display = "none";
 }
 
